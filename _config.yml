@@ -28,7 +28,7 @@ github_username: lucascantor
 markdown: kramdown
 theme: jekyll-skeleton
 include_related_posts: true
-permalink: /:year/:month/:day/:title
+permalink: /:year/:month/:day/:title.html
 plugins:
   - jekyll-feed
 
