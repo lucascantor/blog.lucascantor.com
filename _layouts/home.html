@@ -9,7 +9,7 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        {% assign date_format = site.jekyll-skeleton.date_format | default: "%b %-d, %Y" %}
+        {% assign date_format = site.jekyll-skeleton.date_format | default: "%Y-%m-%d" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
 
         <h4>
