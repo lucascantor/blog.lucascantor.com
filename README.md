@@ -1,4 +1,4 @@
-# beta.blog.lucascantor.com
+# blog.lucascantor.com
 
 Version history of lucascantor.com hosted on S3 behind CloudFront
 
