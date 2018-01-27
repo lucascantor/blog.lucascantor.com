@@ -159,7 +159,8 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: #4A86E8;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: bold; }
 a:hover {
   color: #4A96E8;
   text-decoration: none; }
