@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Lucas Cantor
+title: <a href="https://lucascantor.com">Lucas Cantor</a>
 email: lucascantor@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   IT Lead @Intercom / Dog-Dad to @LizzyThePooch.
@@ -22,11 +22,12 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.lucascantor.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lucascantor
-github_username:  lucascantor
+github_username: lucascantor
 
 # Build settings
 markdown: kramdown
 theme: jekyll-skeleton
+include_related_posts: true
 plugins:
   - jekyll-feed
 
