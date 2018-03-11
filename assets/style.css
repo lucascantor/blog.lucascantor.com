@@ -126,6 +126,14 @@ body {
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
+.hero {
+  margin-top: 10%;
+}
+.social {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-top;
+}
 
 
 /* Typography
@@ -303,6 +311,9 @@ ul {
 .post-list {
   list-style-type: none;
   padding: 0; }
+.no-bullets {
+  list-style: none;
+}
 ol {
   list-style: decimal inside; }
 ol, ul {
