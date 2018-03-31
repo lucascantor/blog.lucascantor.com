@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sleep the Display"
-date:   2018-03-31 09:22:00 -0800
+date:   2018-03-31 09:22:00 -0700
 categories: mac macos screensaver display lock security
 ---
 The screensaver engine on a Mac can be invoked from the command line. This can be useful for locking a Mac remotely if its security settings are configured to require a password after waking, but without needing to put the Mac fully to sleep:
