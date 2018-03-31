@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sleep the Display"
+title:  "Start the Screensaver"
 date:   2018-03-31 09:22:00 -0700
 categories: mac macos screensaver display lock security
 ---
