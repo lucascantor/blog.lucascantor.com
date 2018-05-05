@@ -3,7 +3,7 @@
 
   <head>
   <meta charset="utf-8">
-  <title>Hello World!</title>
+  <title>View Available Software Updates in the Mac App Store</title>
   <meta name="description" content="IT Lead @Intercom / Dog-Dad to @LizzyThePooch. Technical Debtor, Learning to Work Smart, not Hard. Into Apple Sysadmin / Automation.">
   <meta name="author" content="">
 
@@ -28,21 +28,25 @@
 
     <div class="container">
 
-      <h4><strong>Hello World!</strong></h4>
-<p><strong>2018-01-27</strong></p>
+      <h4><strong>View Available Software Updates in the Mac App Store</strong></h4>
+<p><strong>2018-05-05</strong></p>
 
-<p>Testing 1,2,3.</p>
+<p>You can use the <code class="highlighter-rouge">macappstore://</code> scheme to open the Mac App Store to view the currently available software updates:</p>
 
-<p>This is a new jekyll site for <a href="https://blog.lucascantor.com">blog.lucascantor.com</a>.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/bin/open macappstore://showUpdatesPage
+</code></pre></div></div>
 
-<p>This site is built with the <a href="https://github.com/awochna/jekyll-skeleton">jekyll-skeleton</a> theme, to match <a href="https://lucascantor.com">lucascantor.com</a> branding.</p>
+<p>To do this on behalf of the currently logged in user account:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>su - `stat -f '%Su' /dev/console` -c "/usr/bin/open macappstore://showUpdatesPage"
+</code></pre></div></div>
+
+<p><a href="https://gist.github.com/lucascantor/0e3bc44a0ec64b6edc96440fecf644c6">Gist on GitHub</a></p>
 
 
 
 <h4>Related Posts</h4>
 <ul>
-  
-    <li><a href="/2018/05/05/view-available-software-updates.html">View Available Software Updates in the Mac App Store</a></li>
   
     <li><a href="/2018/04/28/extract-saved-wifi-passwords.html">Extract Saved WiFi Passwords from the macOS Keychain</a></li>
   
@@ -51,6 +55,8 @@
     <li><a href="/2018/04/14/re-run-setup-assistant.html">Re-Run the macOS Setup Assistant</a></li>
   
     <li><a href="/2018/04/07/set-the-login-window-text.html">Set the Login Window Text</a></li>
+  
+    <li><a href="/2018/03/31/start-the-screensaver.html">Start the Screensaver</a></li>
   
 </ul>
 

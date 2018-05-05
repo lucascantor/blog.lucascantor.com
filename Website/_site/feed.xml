@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-28T09:08:17-07:00</updated><id>http://localhost:4000/</id><title type="html">Lucas Cantor - Blog</title><subtitle>IT Lead @Intercom / Dog-Dad to @LizzyThePooch. Technical Debtor, Learning to Work Smart, not Hard. Into Apple Sysadmin / Automation.</subtitle><entry><title type="html">Extract Saved WiFi Passwords from the macOS Keychain</title><link href="http://localhost:4000/2018/04/28/extract-saved-wifi-passwords.html" rel="alternate" type="text/html" title="Extract Saved WiFi Passwords from the macOS Keychain" /><published>2018-04-28T08:55:00-07:00</published><updated>2018-04-28T08:55:00-07:00</updated><id>http://localhost:4000/2018/04/28/extract-saved-wifi-passwords</id><content type="html" xml:base="http://localhost:4000/2018/04/28/extract-saved-wifi-passwords.html">&lt;p&gt;You can extract saved wifi passwords from the macOS Keychain using the &lt;code class=&quot;highlighter-rouge&quot;&gt;security&lt;/code&gt; command:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-05T10:43:40-07:00</updated><id>http://localhost:4000/</id><title type="html">Lucas Cantor - Blog</title><subtitle>IT Lead @Intercom / Dog-Dad to @LizzyThePooch. Technical Debtor, Learning to Work Smart, not Hard. Into Apple Sysadmin / Automation.</subtitle><entry><title type="html">View Available Software Updates in the Mac App Store</title><link href="http://localhost:4000/2018/05/05/view-available-software-updates.html" rel="alternate" type="text/html" title="View Available Software Updates in the Mac App Store" /><published>2018-05-05T10:29:00-07:00</published><updated>2018-05-05T10:29:00-07:00</updated><id>http://localhost:4000/2018/05/05/view-available-software-updates</id><content type="html" xml:base="http://localhost:4000/2018/05/05/view-available-software-updates.html">&lt;p&gt;You can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;macappstore://&lt;/code&gt; scheme to open the Mac App Store to view the currently available software updates:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/usr/bin/open macappstore://showUpdatesPage
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To do this on behalf of the currently logged in user account:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;su - `stat -f '%Su' /dev/console` -c &quot;/usr/bin/open macappstore://showUpdatesPage&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gist.github.com/lucascantor/0e3bc44a0ec64b6edc96440fecf644c6&quot;&gt;Gist on GitHub&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">You can use the macappstore:// scheme to open the Mac App Store to view the currently available software updates:</summary></entry><entry><title type="html">Extract Saved WiFi Passwords from the macOS Keychain</title><link href="http://localhost:4000/2018/04/28/extract-saved-wifi-passwords.html" rel="alternate" type="text/html" title="Extract Saved WiFi Passwords from the macOS Keychain" /><published>2018-04-28T08:55:00-07:00</published><updated>2018-04-28T08:55:00-07:00</updated><id>http://localhost:4000/2018/04/28/extract-saved-wifi-passwords</id><content type="html" xml:base="http://localhost:4000/2018/04/28/extract-saved-wifi-passwords.html">&lt;p&gt;You can extract saved wifi passwords from the macOS Keychain using the &lt;code class=&quot;highlighter-rouge&quot;&gt;security&lt;/code&gt; command:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;security find-generic-password -ga &quot;&amp;lt;SSID HERE&amp;gt;&quot; | grep password:
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -84,26 +94,4 @@
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;installer -pkg /path/to/pkg/software/installation/file.pkg -target /
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://gist.github.com/lucascantor/232c9694120eacbbd03f4dbd284edc12&quot;&gt;Gist on GitHub&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">The installer utility can be used to install .pkg software installation files from the command line:</summary></entry><entry><title type="html">Manage Gatekeeper</title><link href="http://localhost:4000/2018/02/24/manage-gatekeeper.html" rel="alternate" type="text/html" title="Manage Gatekeeper" /><published>2018-02-24T11:17:00-08:00</published><updated>2018-02-24T11:17:00-08:00</updated><id>http://localhost:4000/2018/02/24/manage-gatekeeper</id><content type="html" xml:base="http://localhost:4000/2018/02/24/manage-gatekeeper.html">&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;spctl&lt;/code&gt; utility can be used to manage the configuraton of macOS’ &lt;a href=&quot;https://support.apple.com/en-us/HT202491&quot;&gt;Gatekeeper security system&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Check current Gatekeeper configuration status:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;spctl --status
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Disable Gatekeeper entirely:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;spctl --master-disable
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Enable Gatekeeper again:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;spctl --master-disable
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Reset all user-defined Gatekeeper rules:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;spctl --reset-default
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://gist.github.com/lucascantor/466560f7c2f604be53a09b9be8a7d915&quot;&gt;Gist on GitHub&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">The spctl utility can be used to manage the configuraton of macOS’ Gatekeeper security system.</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://gist.github.com/lucascantor/232c9694120eacbbd03f4dbd284edc12&quot;&gt;Gist on GitHub&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">The installer utility can be used to install .pkg software installation files from the command line:</summary></entry></feed>
