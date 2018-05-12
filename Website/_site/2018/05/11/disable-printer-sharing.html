@@ -3,7 +3,7 @@
 
   <head>
   <meta charset="utf-8">
-  <title>Safely Wipe a Mac's SSD</title>
+  <title>Disable Printer Sharing</title>
   <meta name="description" content="IT Lead @Intercom / Dog-Dad to @LizzyThePooch. Technical Debtor, Learning to Work Smart, not Hard. Into Apple Sysadmin / Automation.">
   <meta name="author" content="">
 
@@ -28,26 +28,20 @@
 
     <div class="container">
 
-      <h4><strong>Safely Wipe a Mac's SSD</strong></h4>
-<p><strong>2018-01-27</strong></p>
+      <h4><strong>Disable Printer Sharing</strong></h4>
+<p><strong>2018-05-11</strong></p>
 
-<p>Overwrite the macOS disk partition table and re-partition over encrypted data without causing excessive wear by explicitly erasing the full SSD:</p>
+<p>You disable macOS printer sharing for all printers using the <code class="highlighter-rouge">lpstat</code> and <code class="highlighter-rouge">lpadmin</code> tools:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Replace N in diskN with the disk number of your choice
-# Use "diskutil list" to confirm, and ALWAYS back up your data
-
-dd if=/dev/zero of=/dev/diskN bs=512 count=1
-diskutil partitionDisk /dev/diskN 1 GPT APFS "Macintosh HD" 100%
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lpstat -p | grep printer | awk '{print $2}'| xargs -I{} lpadmin -p {} -o printer-is-shared=false
 </code></pre></div></div>
 
-<p><a href="https://gist.github.com/lucascantor/5316443b3e791c8301196a11b85adf66">Gist on GitHub</a></p>
+<p><a href="https://gist.github.com/lucascantor/6ac2dba3e5535ffb69cbda357ab6d85e">Gist on GitHub</a></p>
 
 
 
 <h4>Related Posts</h4>
 <ul>
-  
-    <li><a href="/2018/05/11/disable-printer-sharing.html">Disable Printer Sharing</a></li>
   
     <li><a href="/2018/05/05/view-available-software-updates.html">View Available Software Updates in the Mac App Store</a></li>
   
@@ -56,6 +50,8 @@ diskutil partitionDisk /dev/diskN 1 GPT APFS "Macintosh HD" 100%
     <li><a href="/2018/04/21/install-backblaze-silently.html">Install Backblaze Silently from the Command Line</a></li>
   
     <li><a href="/2018/04/14/re-run-setup-assistant.html">Re-Run the macOS Setup Assistant</a></li>
+  
+    <li><a href="/2018/04/07/set-the-login-window-text.html">Set the Login Window Text</a></li>
   
 </ul>
 
