@@ -31,7 +31,7 @@
       <h4><strong>Disable Printer Sharing</strong></h4>
 <p><strong>2018-05-11</strong></p>
 
-<p>You disable macOS printer sharing for all printers using the <code class="highlighter-rouge">lpstat</code> and <code class="highlighter-rouge">lpadmin</code> tools:</p>
+<p>You can disable macOS printer sharing for all printers using the <code class="highlighter-rouge">lpstat</code> and <code class="highlighter-rouge">lpadmin</code> tools:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lpstat -p | grep printer | awk '{print $2}'| xargs -I{} lpadmin -p {} -o printer-is-shared=false
 </code></pre></div></div>
