@@ -3,7 +3,7 @@
 
   <head>
   <meta charset="utf-8">
-  <title>Sleep the Display</title>
+  <title>Enable Ownership on External Disks</title>
   <meta name="description" content="IT Lead @Intercom / Dog-Dad to @LizzyThePooch. Technical Debtor, Learning to Work Smart, not Hard. Into Apple Sysadmin / Automation.">
   <meta name="author" content="">
 
@@ -28,27 +28,22 @@
 
     <div class="container">
 
-      <h4><strong>Sleep the Display</strong></h4>
-<p><strong>2018-03-24</strong></p>
+      <h4><strong>Enable Ownership on External Disks</strong></h4>
+<p><strong>2018-06-02</strong></p>
 
-<p>The <code class="highlighter-rouge">pmset</code> utility can be used to sleep the display of a Mac from the command line. This can be useful for locking a Mac remotely if its security settings are configured to require a password after waking, but without needing to put the Mac fully to sleep:</p>
+<p>By default, macOS doesn’t enable ownership, and thus access permissions, on external disks. If you have access to Mac with an external disk mounted, you have access to the full contents of that external disk as well.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pmset displaysleepnow
+<p>If you do want to enable ownership on an external disk, it’s easy to do using the <code class="highlighter-rouge">vsdbutil</code> tool:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vsdbutil -a /Volumes/ExternalDiskNameHere
 </code></pre></div></div>
 
-<p>If you do want to put the Mac to sleep, rather than just sleeping the display, just use <code class="highlighter-rouge">sleepnow</code> instead:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pmset sleepnow
-</code></pre></div></div>
-
-<p><a href="https://gist.github.com/lucascantor/a8f827e9b32450a23f5d72e1aca16947">Gist on GitHub</a></p>
+<p><a href="https://gist.github.com/lucascantor/6d95be0a27307d7730b2b361653b7fa7">Gist on GitHub</a></p>
 
 
 
 <h4>Related Posts</h4>
 <ul>
-  
-    <li><a href="/2018/06/02/enable-ownership-on-external-disks.html">Enable Ownership on External Disks</a></li>
   
     <li><a href="/2018/05/11/disable-printer-sharing.html">Disable Printer Sharing</a></li>
   
@@ -57,6 +52,8 @@
     <li><a href="/2018/04/28/extract-saved-wifi-passwords.html">Extract Saved WiFi Passwords from the macOS Keychain</a></li>
   
     <li><a href="/2018/04/21/install-backblaze-silently.html">Install Backblaze Silently from the Command Line</a></li>
+  
+    <li><a href="/2018/04/14/re-run-setup-assistant.html">Re-Run the macOS Setup Assistant</a></li>
   
 </ul>
 
