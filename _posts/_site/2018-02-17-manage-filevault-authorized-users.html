@@ -1,0 +1,15 @@
+<p>The <code class="highlighter-rouge">fdesetup</code> utility can be used to manage which users are authorized to unlock FileVault encrypted boot volumes:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fdesetup add -usertoadd &lt;username&gt;
+</code></pre></div></div>
+
+<p>You will be prompted for the password of a FileVault-enabled user account, or the FileVault recovery key, and the password of the user to add.</p>
+
+<p><a href="https://gist.github.com/lucascantor/235b3254bdef2b78bfe8536ff6da6124">Gist on GitHub</a></p>
+
+<p>Similarly, you can remove users from being authorized to unlock FileVault encrypted boot volumes as well:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fdesetup remove -user &lt;username&gt;
+</code></pre></div></div>
+
+<p><a href="https://gist.github.com/lucascantor/5c89e45d2b0f18288a27fa9e204abf68">Gist on GitHub</a></p>
