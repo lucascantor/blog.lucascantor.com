@@ -1,7 +1,5 @@
 ---
 ---
 
-@import
-  "{{ site.theme }}"
-  "style.css"
-;
+@import "{{ site.theme }}";
+@import style.css
