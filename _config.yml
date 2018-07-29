@@ -25,7 +25,6 @@ github_username: lucascantor
 
 # Build settings
 markdown: kramdown
-remote_theme: lucascantor/jekyll-skeleton
 permalink: /:year/:month/:day/:title.html
 plugins:
 
