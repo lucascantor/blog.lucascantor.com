@@ -26,8 +26,6 @@ github_username: lucascantor
 # Build settings
 markdown: kramdown
 permalink: /:year/:month/:day/:title.html
-sass:
-  sass_dir: _sass
 plugins:
 
 # Exclude from processing.
