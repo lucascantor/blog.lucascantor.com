@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: blog.lucascantor.com
+title: lucascantor
 author: Lucas Cantor
 email: lucascantor@gmail.com
 description_1: IT Systems Engineer at Intercom / Husband to Francesca Cantor / Dog-Dad to LizzyThePooch.

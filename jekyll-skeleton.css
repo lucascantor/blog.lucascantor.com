@@ -162,6 +162,11 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 p {
   margin-top: 0; }
 
+h2 img {
+    height: 1em;
+    width: auto;
+}
+
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
