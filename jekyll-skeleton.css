@@ -343,14 +343,13 @@ code {
   color: #FFF;
   font-size: 100%;
   background: #011627;
-  overflow: auto;
-  }
+  overflow: auto; }
 pre > code {
   display: block;
   color: #FFF;
   padding: 1rem 1.5rem;
   white-space: pre;
-  word-wrap: break-word; }
+  word-wrap: normal; }
 
 
 /* Tables
