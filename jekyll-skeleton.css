@@ -343,7 +343,8 @@ code {
   color: #FFF;
   font-size: 90%;
   background: #011627;
-  overflow: auto; }
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
 pre > code {
   display: block;
   color: #FFF;

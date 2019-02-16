@@ -1,6 +1,7 @@
 .hljs {
   display: block;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   padding: 1rem 1.5rem;
   background: #011627;
 }
