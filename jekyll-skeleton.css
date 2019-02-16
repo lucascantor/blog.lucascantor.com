@@ -341,16 +341,16 @@ code {
   margin: 0 .2rem;
   border-radius: 4px;
   color: #FFF;
-  font-size: 100%;
+  font-size: 90%;
   background: #011627;
   overflow: auto; }
 pre > code {
   display: block;
   color: #FFF;
+  font-size: 100%;
   padding: 1rem 1.5rem;
   white-space: pre;
   word-wrap: normal; }
-
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -365,7 +365,6 @@ td:first-child {
 th:last-child,
 td:last-child {
   padding-right: 0; }
-
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
