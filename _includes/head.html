@@ -13,10 +13,6 @@
 
   <link rel="icon" type="image/x-icon" href="{{ "/favicon.png" | prepend: site.url }}" />
 
-  <link rel="stylesheet" href="{{ "/code.css" | prepend: site.url }}">
-  <script src="{{ "/highlight.js" | prepend: site.url }}"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-
   {% if jekyll.environment == "production" and site.google_analytics %}
   {% include google-analytics.html %}
   {% endif %}
