@@ -43,12 +43,7 @@ After finally getting this working myself, I want to make sure I document it for
     - Description: `Blacklist All Chrome Extensions by Default`
     - OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallBlacklist`
     - Data type: `String` (select from drop-down list)
-    - Value:
-        ```
-        <enabled/>
-
-        <data id="ExtensionInstallBlacklistDesc" value="1&#xF000;*"/>
-        ```
+    - Value: `<enabled/> <data id="ExtensionInstallBlacklistDesc" value="1&#xF000;*"/>`
 
 #### Whitelist Specific Chrome Extensions for Users to Opt-In to Installing
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/)
@@ -61,14 +56,9 @@ After finally getting this working myself, I want to make sure I document it for
     - Description: `Whitelist Specific Chrome Extensions`
     - OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallWhitelist`
     - Data type: `String` (select from drop-down list)
-    - Value:
-    ```
-    <enabled/>
-    
-    <data id="ExtensionInstallWhitelistDesc" value="1&#xF000;aomjjhallfgjeglblehebfpbcfeobpgk&#xF000;2&#xF000;aeblfdkhhhdcdjpifhhbdiojplfjncoa"/>
-    ```
+    - Value: `<enabled/> <data id="ExtensionInstallWhitelistDesc" value="1&#xF000;aomjjhallfgjeglblehebfpbcfeobpgk&#xF000;2&#xF000;aeblfdkhhhdcdjpifhhbdiojplfjncoa"/>`
 
-Note: for the **Value** field, when creating a key-value pair list with multiple entries, use `&#xF000;` as the separator
+Note: for the **Value** field, when creating a key-value pair list with multiple entries, use `&#xF000;` as the separator.
 
 #### Force Installation of Specific Chrome Extensions without User Approval
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/)
@@ -81,12 +71,7 @@ Note: for the **Value** field, when creating a key-value pair list with multiple
     - Description: `Force Specific Chrome Extensions`
     - OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`
     - Data type: `String` (select from drop-down list)
-    - Value:
-    ```
-    <enabled/>
-    
-    <data id="ExtensionInstallForcelistDesc" value="1&#xF000;cjpalhdlnbpafiamejdnhcphjbkeiagm;https://clients2.google.com/service/update2/crx"/>
-    ```
+    - Value: `<enabled/> <data id="ExtensionInstallForcelistDesc" value="1&#xF000;cjpalhdlnbpafiamejdnhcphjbkeiagm;https://clients2.google.com/service/update2/crx"/>`
 
 Note: for the **Value** field, when creating an ExtensionInstallForcelist, each Chrome extension entry should have its installation source URL appended to the extension ID following a semicolon. In my example, `cjpalhdlnbpafiamejdnhcphjbkeiagm;https://clients2.google.com/service/update2/crx` forces installation of extension ID `cjpalhdlnbpafiamejdnhcphjbkeiagm` from source `https://clients2.google.com/service/update2/crx` (direct from Google itself).
 
