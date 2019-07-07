@@ -45,7 +45,7 @@ After finally getting this working myself, I want to make sure I document it for
     - Data type: `String` (select from drop-down list)
     - Value: `<enabled/> <data id="ExtensionInstallBlacklistDesc" value="1&#xF000;*"/>`
 
-#### Whitelist Specific Chrome Extensions for Users to Opt-In to Installing
+#### Whitelist Specific Chrome Extensions for Users to Install
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/)
 2. Go to **Intune** > **Device configuration** > **Profiles**.
 3. Click the **Windows 10 – Chrome configuration** profile you created previously.
@@ -60,7 +60,7 @@ After finally getting this working myself, I want to make sure I document it for
 
 Note: for the **Value** field, when creating a key-value pair list with multiple entries, use `&#xF000;` as the separator.
 
-#### Force Installation of Specific Chrome Extensions without User Approval
+#### Force Install Specific Chrome Extensions as Mandatory
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/)
 2. Go to **Intune** > **Device configuration** > **Profiles**.
 3. Click the **Windows 10 – Chrome configuration** profile you created previously.
@@ -75,7 +75,7 @@ Note: for the **Value** field, when creating a key-value pair list with multiple
 
 Note: for the **Value** field, when creating an ExtensionInstallForcelist, each Chrome extension entry should have its installation source URL appended to the extension ID following a semicolon. In my example, `cjpalhdlnbpafiamejdnhcphjbkeiagm;https://clients2.google.com/service/update2/crx` forces installation of extension ID `cjpalhdlnbpafiamejdnhcphjbkeiagm` from source `https://clients2.google.com/service/update2/crx` (direct from Google itself).
 
-#### Confirm that the policy is Enforced
+#### Confirm Chrome Policy is Enforced
 1. Allow time for Intune to propagate the policy to Chrome on one of the devices you’re managing. If the policy is taking time to push, verify that the device is enrolled and you have synced the device to get the latest policies from Intune.
 2. On a managed device, open **Google Chrome**.
 3. In the address bar, enter `chrome://policy` to verify that the policy you set is enforced.
