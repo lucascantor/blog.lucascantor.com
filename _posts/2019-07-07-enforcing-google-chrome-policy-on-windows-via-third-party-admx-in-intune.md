@@ -17,6 +17,7 @@ After finally getting this working myself, I want to make sure I document it for
 1. Go to **Intune** > **Device configuration** > **Profiles**.
 1. Next to **Devices configuration – Profiles**, click **Create profile**.
 1. Enter the following text in these fields:
+
     | Field        | Text to enter                       |
     |--------------|-------------------------------------|
     | Name         | Windows 10 – Chrome configuration   |
@@ -25,6 +26,7 @@ After finally getting this working myself, I want to make sure I document it for
     | Profile type | Custom                              |
     | Settings     | Custom (select from drop-down list) |
 1. Selecting **Custom** in the step above opens a new menu for OMA-URI settings. Click **Add** to add specific policies you can configure and enter the following text:
+
     | Field       | Text to enter                                                                     |
     |-------------|-----------------------------------------------------------------------------------|
     | Name        | Chrome ADMX Ingestion                                                             |
@@ -43,6 +45,7 @@ After finally getting this working myself, I want to make sure I document it for
 1. Select **Properties** > **Settings** > **Configure** to open the Custom OMA-URI settings.
 1. Click **Add** to add a row.
 1. Enter the following text in these fields:
+
     | Field       | Text to enter                                                                                      |
     |-------------|----------------------------------------------------------------------------------------------------|
     | Name        | Chrome – ADMX – ExtensionInstallBlacklist                                                          |
@@ -58,6 +61,7 @@ After finally getting this working myself, I want to make sure I document it for
 1. Select **Properties** > **Settings** > **Configure** to open the Custom OMA-URI settings.
 1. Click **Add** to add a row.
 1. Enter the following text in these fields (in my example, this whitelists the [1Password (aomjjhallfgjeglblehebfpbcfeobpgk)](https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk) and [1Password X (aeblfdkhhhdcdjpifhhbdiojplfjncoa)](https://chrome.google.com/webstore/detail/1password-x-%E2%80%93-password-ma/aeblfdkhhhdcdjpifhhbdiojplfjncoa) Chrome extensions):
+
     | Field       | Text to enter                                                                                                                                                       |
     |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Name        | Chrome – ADMX – ExtensionInstallWhitelist                                                                                                                           |
@@ -74,6 +78,7 @@ After finally getting this working myself, I want to make sure I document it for
 1. Select **Properties** > **Settings** > **Configure** to open the Custom OMA-URI settings.
 1. Click **Add** to add a row.
 1. Enter the following text in these fields: (in my example, this forcees the [uBlock Origin (cjpalhdlnbpafiamejdnhcphjbkeiagm)](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm) Chrome extension):
+
     | Field       | Text to enter                                                                                      |
     |-------------|----------------------------------------------------------------------------------------------------|
     | Name        | Chrome – ADMX – ExtensionInstallForcelist                                                          |
