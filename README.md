@@ -1,6 +1,6 @@
 # blog.lucascantor.com
 
-Version history of [blog.lucascantor.com](https://blog.lucascantor.com) on GitHub Pages
+Version history of [blog.lucascantor.com](https://blog.lucascantor.com) - hosted on GitHub Pages behind AWS CloudFront
 
 ## Contributing workflow
 
