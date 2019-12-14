@@ -179,7 +179,7 @@ getUriFilename() {
 
 Now we have the `installFromURL()` function, which we can break down further.
 
-First we define our URL as passed in, and create a corresponding download path randomly via `mktmp`:
+First we define our URL as passed in, and create a corresponding download path randomly via `mktemp`:
 
 ```
 # define the vendor-hosted installer file url (passed in as $1) and a local downloadPath to store it
@@ -201,7 +201,7 @@ else
 fi
 ```
 
-Next we check if the downloaded file is a disk image, and if so, we mount it at a random mount point using `mktmp` again. Once the disk image is mounted, we backup the download path and then overwrite it with the new mount point, allowing subsequent logic to continue, without needing to worry about whether the downloaded files to install are in a regular directory or a mounted disk image:
+Next we check if the downloaded file is a disk image, and if so, we mount it at a random mount point using `mktemp` again. Once the disk image is mounted, we backup the download path and then overwrite it with the new mount point, allowing subsequent logic to continue, without needing to worry about whether the downloaded files to install are in a regular directory or a mounted disk image:
 
 ```
 # if the downloaded file is a dmg, mount it as a disk image at mountPoint
