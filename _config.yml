@@ -23,7 +23,6 @@ url: "https://blog.lucascantor.com" # the base hostname & protocol for your site
 twitter_username: 
 github_username: lucascantor
 mastodon_profile_url: 
-linkedin_profile_url: https://linkedin.com/in/lucascantor
 
 # Build settings
 markdown: kramdown
