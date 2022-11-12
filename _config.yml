@@ -16,11 +16,11 @@
 title: Lucas Cantor
 author: Lucas Cantor
 email: lucas@cantor.cloud
-description_1: Information Systems Engineer • He / Him • Husband to Francesca Cantor • Dog-Dad
-description_2: Learning to Work Smart, not Hard • Forming Good Habits, One Automation at a Time
+description_1: He/Him • Information Systems Engineer • Professionally Lazy • Amateur Vegan
+description_2: Humane Tech & Privacy Evangelist • Public Transit & Cycling Infra Fanboy
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.lucascantor.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
+twitter_username:
 github_username: lucascantor
 mastodon_profile_url: https://mastodon.social/@lucascantor
 
@@ -28,7 +28,6 @@ mastodon_profile_url: https://mastodon.social/@lucascantor
 markdown: kramdown
 permalink: /:year/:short_month/:day/:title.html
 plugins:
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
