@@ -92,16 +92,12 @@ module.exports = {
   // ---------------------------------------------------------------------------
   metaPages: [
     {
-      url: 'https://example.org/link-1/',
-      title: 'Example link 1',
+      url: 'https://infosec.exchange/@lucas',
+      title: 'Mastodon',
     },
     {
-      url: 'https://example.org/link-2/',
-      title: 'Example link 2',
-    },
-    {
-      url: 'https://example.org/link-3/',
-      title: 'Example link 3',
+      url: 'https://glass.photo/lucascantor',
+      title: 'Glass',
     },
   ],
   // ---------------------------------------------------------------------------
@@ -140,10 +136,10 @@ module.exports = {
     language: 'en-US',
     // Default theme color for PWA application. Affects how the OS displays
     // the site
-    themeColor: '#1773cf',
+    themeColor: '#4a86e8',
     // Placeholder background color for the application page to display
     // before its stylesheet is loaded
-    backgroundColor: '#1773cf',
+    backgroundColor: '#4a86e8',
   },
   // ---------------------------------------------------------------------------
   // Settings for post share buttons
@@ -185,7 +181,7 @@ module.exports = {
       // Color of the links on the site. Since XSLT stylesheet is a separate
       // entity from the rest of the site styling, it has to be
       // specified manually
-      baseColor: '#1773cf',
+      baseColor: '#4a86e8',
     },
     // Settings for RSS feed displaying post excerpts
     excerpts: {
