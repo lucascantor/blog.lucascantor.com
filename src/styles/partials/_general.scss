@@ -10,7 +10,7 @@ html {
   background-color: var(--background-color);
   color: var(--text-color);
 
-  *:focus-visible {
+  &[data-whatinput='keyboard'] *:focus {
     outline-color: var(--link-color);
   }
 }
