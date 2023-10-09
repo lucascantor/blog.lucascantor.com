@@ -2,12 +2,16 @@ const {
   initialSetup,
   layoutAliases,
   collections,
-  transforms,
   shortcodes,
   filters,
   plugins,
   constants,
+  events,
 } = require('./_11ty');
+const minifyHTML = require('./_11ty/transforms/minifyHTML');
+const minifyJS = require('./_11ty/transforms/minifyJS');
+const minifyJSON = require('./_11ty/transforms/minifyJSON');
+const minifyXML = require('./_11ty/transforms/minifyXML');
 
 module.exports = function (eleventyConfig) {
   // --- Initial config
@@ -28,9 +32,10 @@ module.exports = function (eleventyConfig) {
 
   // --- Transformations
 
-  Object.values(transforms).forEach(({ name, body }) => {
-    eleventyConfig.addTransform(name, body);
-  });
+  eleventyConfig.addTransform('minifyHTML', minifyHTML);
+  eleventyConfig.addTransform('minifyJSON', minifyJSON);
+  eleventyConfig.addTransform('minifyXML', minifyXML);
+  eleventyConfig.addTransform('minifyJS', minifyJS);
 
   // --- Filters
 
@@ -49,6 +54,14 @@ module.exports = function (eleventyConfig) {
   Object.values(plugins).forEach(({ body, options }) => {
     eleventyConfig.addPlugin(body, options && options);
   });
+
+  // --- After build events
+
+  if (events.after.length > 0) {
+    Object.values(events.after).forEach((afterBuildEvent) => {
+      eleventyConfig.on('eleventy.after', afterBuildEvent);
+    });
+  }
 
   // --- Consolidating everything under content folder
 
