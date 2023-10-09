@@ -101,30 +101,18 @@ module.exports = {
     },
   ],
   // ---------------------------------------------------------------------------
-  // Default settings for OpenGraph functionality (tags and generated images)
+  // Default settings for OpenGraph tags
   // ---------------------------------------------------------------------------
   opengraph: {
     type: 'website',
-    // Default image to use when none is specified
-    image: '/images/share-1200x600.jpg',
-    // Opt-in to automatic generation of OpenGraph images
-    // If disabled, default images will be used
-    // If enabled, make sure you _like_ the way they look like
-    // (build the site and find the images in _site/images/share folder)
-    // To modify what generated OG images look like
-    // edit content/_data/utils/og-image.njk
-    enableImageGeneration: false,
-    // Background color for auto-generated OpenGraph images
-    ogImageBackgroundColor: '#1773cf',
-    // Text color for for auto-generated OpenGraph images
-    ogImageTextColor: '#fff',
+    image: '/images/share-400x400.jpg',
   },
   // ---------------------------------------------------------------------------
   // Default settings for Twitter graph tags
   // ---------------------------------------------------------------------------
   twitter: {
-    card: 'summary_large_image',
-    image: '/images/share-1200x600.jpg',
+    card: 'summary',
+    image: '/images/share-400x400.jpg',
   },
   // ---------------------------------------------------------------------------
   // Settings for post tags
@@ -141,9 +129,8 @@ module.exports = {
     postsPerPage: 10,
   },
   // ---------------------------------------------------------------------------
-  // Settings for PWA
+  // Settings for PWA manifest file
   // ---------------------------------------------------------------------------
-  enablePWA: false, // If enabled, service worker for PWA will be registered
   manifestJson: {
     // Language of PWA application
     language: 'en-US',
@@ -166,7 +153,14 @@ module.exports = {
   // are available on the post page. If this array is empty, share section
   // won't be displayed at all.
   // ---------------------------------------------------------------------------
-  shareButtons: ['clipboard'],
+  shareButtons: [
+    'mastodon',
+    'twitter',
+    'linkedin',
+    'facebook',
+    'hackernews',
+    'clipboard',
+  ],
   // ---------------------------------------------------------------------------
   // Date formats used on the site (mostly somewhere around post contents).
   // ---------------------------------------------------------------------------
@@ -265,19 +259,4 @@ module.exports = {
     i192: '/icon-192.png',
     i512: '/icon-512.png',
   },
-  // ---------------------------------------------------------------------------
-  // Locale-based sorting options (mostly for tags)
-  // ---------------------------------------------------------------------------
-  localeSort: {
-    // Base language used for locale-based sorting
-    // If you don't use characters with diacritic marks in your language,
-    // you can probably leave this unchanged
-    language: 'en',
-    // Options for localeCompare tag sorting method
-    options: {
-      sensitivity: 'base',
-    },
-  },
-  // Enable reading progress bar on article pages
-  enableReadingProgressBar: true,
 };

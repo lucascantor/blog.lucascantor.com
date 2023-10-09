@@ -1,3 +1,4 @@
+const moduleName = require('../helpers/moduleName');
 const TerserHTML = require('html-minifier-terser');
 const { IS_PRODUCTION } = require('../constants');
 
@@ -15,9 +16,14 @@ const HTML_MINIFIER_OPTIONS = {
   removeStyleLinkTypeAttributes: true,
 };
 
-module.exports = (content, outputPath) => {
+const body = (content, outputPath) => {
   if (IS_PRODUCTION && outputPath && outputPath.endsWith('.html')) {
     return TerserHTML.minify(content, HTML_MINIFIER_OPTIONS);
   }
   return content;
+};
+
+module.exports = {
+  name: moduleName(__filename),
+  body,
 };
