@@ -16,7 +16,7 @@ const body = (date) => {
       </div>
     </div>`;
   } else {
-    return ``;
+    return '';
   }
 };
 
