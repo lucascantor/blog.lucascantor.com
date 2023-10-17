@@ -39,7 +39,7 @@ The idea, which ~~steals~~ borrows heavily from [Weather Line](https://weatherli
 
 I've seen an app or two on occasion that sort of comes close to this concept, but never without a bloated and complex list of irrelevant features, shady ads and data-mining practices, or hacky bank and credit card integrations. What I eventually realized is that I should just build this app for myself (and for my partner), and not worry about solving theoretical problems or addressing theoretical use-cases that potential customers might have. This was incredibly liberating, and it also eliminated an unnecessary mental "barrier to entry" to getting an iOS app published in the App Store[^1].
 
-[^1]: Of course, there's still the literall $100 per year barrier to entry, which Apple charges me for the privilege of running my own app on my own phone... 🙃
+[^1]: Of course, there's still the literal $100 per year barrier to entry, which Apple charges me for the privilege of running my own app on my own phone... 🙃
 
 ## My Gift to You
 
