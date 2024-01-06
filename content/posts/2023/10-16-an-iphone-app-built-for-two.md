@@ -22,7 +22,7 @@ This whole process has frankly been outside my comfort zone, but that's really t
 
 The latest in my series of ongoing failed attempts focused on development in [SwiftUI](https://developer.apple.com/xcode/swiftui/) specifcally, and this time, for whatever reason, it finally clicked for me. I think the thing about SwiftUI that works so well for the way _my_ brain works is its [declarative syntax](https://en.wikipedia.org/wiki/Declarative_programming). In hindsight, I've always felt that other declarative languages have made the most sense to me intuitively. For example, the majority of the professional work I've enjoyed most (and been proudest of) has all been built via [Terraform](https://www.terraform.io). Frankly, ever since learning about SwiftUI, I've been ecstatic to get to use that same declarative paradigm to conquer a programming challenge I've struggled with for so long.
 
-I'd also like to give a shout out to Paul Hudson for his absolutely amazing site, [Hacking with Swift](https://www.hackingwithswift.com/learn), which made the process of learning SwiftUI even easier. Paul is an astonisingly generous and brilliant person, and if you're at all interested in Swift, they absolutely deserve your time, attention, and support.
+I'd also like to give a shout out to Paul Hudson for their absolutely amazing site, [Hacking with Swift](https://www.hackingwithswift.com/learn), which made the process of learning SwiftUI even easier. Paul is an astonisingly generous and brilliant person, and if you're at all interested in Swift, they absolutely deserve your time, attention, and support.
 
 ## The Mother of Invention
 
