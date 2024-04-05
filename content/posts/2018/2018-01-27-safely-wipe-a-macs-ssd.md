@@ -2,16 +2,13 @@
 title: Safely Wipe a Mac's SSD
 description:
 date: 2018-01-27
-tags:
-  - mac
-  - ssd
-  - erase
-  - diskutil
+disclaimer:
+  text: This is an old post. Contant may be out of date.
 ---
 
 Overwrite the macOS disk partition table and re-partition over encrypted data without causing excessive wear by explicitly erasing the full SSD:
 
-```
+```bash
 # Replace N in diskN with the disk number of your choice
 # Use "diskutil list" to confirm, and ALWAYS back up your data
 

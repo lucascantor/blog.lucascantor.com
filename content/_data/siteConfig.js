@@ -14,7 +14,7 @@ module.exports = {
     // OpenGraph tags and feeds.
     // It is also used as a fallback description if no custom description
     // is provided for a page / post.
-    description: 'Enterprise IT Automation for Fun and Profit',
+    description: 'Modern IT & InfoSec for the Discerningly Lazy',
     // Production URL. Used by 'alwaysProductionUrl' filter.
     // If none is provided, relative paths will be used
     // and in some cases (like sitemap.xml) that is TOTALLY NOT what you want
@@ -99,6 +99,10 @@ module.exports = {
       url: 'https://glass.photo/lucascantor',
       title: 'Glass',
     },
+    {
+      url: 'https://github.com/lucascantor',
+      title: 'GitHub',
+    },
   ],
   // ---------------------------------------------------------------------------
   // Default settings for OpenGraph functionality (tags and generated images)
@@ -167,8 +171,13 @@ module.exports = {
   // won't be displayed at all.
   // ---------------------------------------------------------------------------
   shareButtons: [
-    'clipboard'
-],
+    'mastodon',
+    'twitter',
+    'linkedin',
+    'facebook',
+    'hackernews',
+    'clipboard',
+  ],
   // ---------------------------------------------------------------------------
   // Date formats used on the site (mostly somewhere around post contents).
   // ---------------------------------------------------------------------------
@@ -262,7 +271,6 @@ module.exports = {
   // Site icons, used mostly for PWA manifest
   // ---------------------------------------------------------------------------
   icons: {
-    ico: '/favicon.ico',
     svg: '/favicon.svg',
     i192: '/icon-192.png',
     i512: '/icon-512.png',

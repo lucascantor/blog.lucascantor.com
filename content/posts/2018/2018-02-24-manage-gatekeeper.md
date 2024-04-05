@@ -2,35 +2,33 @@
 title: Manage Gatekeeper
 description:
 date: 2018-02-24
-tags:
-  - mac
-  - security
-  - gatekeeper
+disclaimer:
+  text: This is an old post. Contant may be out of date.
 ---
 
 The `spctl` utility can be used to manage the configuraton of macOS' [Gatekeeper security system](https://support.apple.com/en-us/HT202491).
 
 Check current Gatekeeper configuration status:
 
-```
+```bash
 spctl --status
 ```
 
 Disable Gatekeeper entirely:
 
-```
+```bash
 spctl --master-disable
 ```
 
 Enable Gatekeeper again:
 
-```
+```bash
 spctl --master-disable
 ```
 
 Reset all user-defined Gatekeeper rules:
 
-```
+```bash
 spctl --reset-default
 ```
 

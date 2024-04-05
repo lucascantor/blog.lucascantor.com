@@ -2,17 +2,13 @@
 title: Remotely Restart an Encrypted Mac
 description:
 date: 2018-02-10
-tags:
-  - mac
-  - remote
-  - restart
-  - encryption
-  - filevault
+disclaimer:
+  text: This is an old post. Contant may be out of date.
 ---
 
 The `fdesetup` utility can be used to remotely restart a Mac without needing physical in-person keyboard access to unlock FileVault on the next boot only:
 
-```
+```bash
 fdesetup authrestart
 ```
 
@@ -24,7 +20,7 @@ After restarting, macOS will allow remote access via SSH immediately, without th
 
 Bonus - you can do this on Windows as well, with PowerShell:
 
-```
+```powershell
 PowerShell -Command "Suspend-BitLocker -MountPoint "C:" -RebootCount 1"
 shutdown /r /f
 ```
