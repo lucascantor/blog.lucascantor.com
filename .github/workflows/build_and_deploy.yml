@@ -26,16 +26,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Use Node.js LTS
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 'node'
           check-latest: true
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Install dependencies & build
         run: |
           npm install
           npm run build-gh-pages
+
+      - name: Upload artifact
+          uses: actions/upload-pages-artifact@v3
 
   # Deployment job
   deploy:
@@ -47,4 +53,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
