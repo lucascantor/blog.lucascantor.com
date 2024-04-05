@@ -49,33 +49,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addShortcode(name, body);
   });
 
-  // --- Paired Shortcodes
-
-  eleventyConfig.addPairedShortcode(
-    'admonition',
-    function (content, type, title) {
-      let titleStr = '';
-      if (title) {
-        titleStr = title;
-      } else if (type) {
-        titleStr =
-          type.substring(0, 1).toUpperCase() + type.substring(1).toLowerCase();
-      } else {
-        titleStr = 'Info';
-      }
-
-      return `<div class="admonition${type ? ` ${type.toLowerCase()}` : ''}">
-      <div class="admonition-title">
-        <span class="admonition-icon${
-          type ? ` ${type.toLowerCase()}` : ''
-        }"></span>
-        ${titleStr}
-      </div>
-      <div class="admonition-content">${content}</div>
-    </div>`;
-    },
-  );
-
   // --- Plugins
 
   Object.values(plugins).forEach(({ body, options }) => {

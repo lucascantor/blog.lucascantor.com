@@ -2,16 +2,13 @@
 title: Manage FileVault-Authorized Users
 description:
 date: 2018-02-17
-tags:
-  - mac
-  - encryption
-  - filevault
-  - users
+disclaimer:
+  text: This is an old post. Contant may be out of date.
 ---
 
 The `fdesetup` utility can be used to manage which users are authorized to unlock FileVault encrypted boot volumes:
 
-```
+```bash
 fdesetup add -usertoadd <username>
 ```
 
@@ -21,7 +18,7 @@ You will be prompted for the password of an existing FileVault-authorized user a
 
 Similarly, you can remove users from being authorized to unlock FileVault encrypted boot volumes as well:
 
-```
+```bash
 fdesetup remove -user <username>
 ```
 

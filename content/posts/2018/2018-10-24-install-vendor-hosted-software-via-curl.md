@@ -2,11 +2,8 @@
 title: Install Vendor-Hosted Software via curl
 description:
 date: 2018-10-24
-tags:
-  - mac
-  - software
-  - install
-  - curl
+disclaimer:
+  text: This is an old post. Contant may be out of date.
 ---
 
 ## Background
@@ -26,7 +23,7 @@ Since Jamf Pro itself is already trusted automatically by the new macOS `Privacy
 
 The staging script is very simple, with the desired vendor-hosted installer file's URL being passed in by a given Jamf policy as `$4` (since $1, $2, and $3 are reserved by Jamf):
 
-```
+```bash
 #!/bin/bash
 
 # Stage a txt file containing a URL for a vendor-hosted software installer file
@@ -35,12 +32,11 @@ The staging script is very simple, with the desired vendor-hosted installer file
 /bin/echo "$4" > /Library/Application\ Support/JAMF/.installFromURL.txt
 
 exit 0
-
 ```
 
 The installation script is a little more complex, but here it is in its entirely before we break it down:
 
-```
+```bash
 #!/bin/bash
 
 # Install software from vendor-hosted software installer file
@@ -135,12 +131,11 @@ installFromURL() {
 installFromURL "$url"
 
 exit 0
-
 ```
 
 We start with a sanity check to make sure the staging script has run successfully, echoing out details to the log, and removing the staged text file entirely after reading it, in order to avoid accidentally re-using it in the future:
 
-```
+```bash
 # if staged .installFromURL.txt file exists
 if [ -e /Library/Application\ Support/JAMF/.installFromURL.txt ]; then
   # define vendor-hosted installer file url we want to download and install
@@ -161,7 +156,7 @@ Next we build the `getUriFilename()` function, which is needed to obtain the ful
 
 We first check for `filename=` and then if needed `location:` in the returned header:
 
-```
+```bash
 # get the full filename from a remote server via curl
 getUriFilename() {
   header="$(curl -sIL "$1" | tr -d '\r')"
@@ -186,7 +181,7 @@ Now we have the `installFromURL()` function, which we can break down further.
 
 First we define our URL as passed in, and create a corresponding download path randomly via `mktemp`:
 
-```
+```bash
 # define the vendor-hosted installer file url (passed in as $1) and a local downloadPath to store it
 url="$1"
 downloadPath=$(/usr/bin/mktemp -d /tmp/downloadPath.XXXX)
@@ -194,7 +189,7 @@ downloadPath=$(/usr/bin/mktemp -d /tmp/downloadPath.XXXX)
 
 Next we find the remote filename (if needed) using the `getUriFilename()` function from above. If `getUriFilename()` doesn't return a filename, we just use the end of the supplied URL:
 
-```
+```bash
 # find the remote fileName if applicable
 fileName=$(getUriFilename "$url")
 # download the remote file to the to $downloadPath/$fileName if $fileName is known
@@ -208,7 +203,7 @@ fi
 
 Next we check if the downloaded file is a disk image, and if so, we mount it at a random mount point using `mktemp` again. Once the disk image is mounted, we backup the download path and then overwrite it with the new mount point, allowing subsequent logic to continue, without needing to worry about whether the downloaded files to install are in a regular directory or a mounted disk image:
 
-```
+```bash
 # if the downloaded file is a dmg, mount it as a disk image at mountPoint
 if [ -e "$downloadPath"/*.dmg ]; then
   mountPoint=$(/usr/bin/mktemp -d /tmp/mountPoint.XXXX)
@@ -222,7 +217,7 @@ fi
 
 Now we can actually install the downloaded files, supporting `.app`, `.zip`, and `.pkg` formats. `.app`s are simply copied directly to the `/Applications` directory, `.zip`s are unzipped to the `/Applications` directory, and `.pkg`s are installed using the `installer` utility:
 
-```
+```bash
 # install the downloaded app, zip, or pkg
 if [ -e "$downloadPath"/*.app ]; then
   /bin/cp -R "$downloadPath"/*.app /Applications 2>/dev/null
@@ -235,7 +230,7 @@ fi
 
 Now that an up-to-date version of the desired software is installed, we can clean up:
 
-```
+```bash
 # clean up, including mounted disk image if applicable
 if [ -e "$originalDownloadPath" ]; then
   /bin/rm -rf "$originalDownloadPath"

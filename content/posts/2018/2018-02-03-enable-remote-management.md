@@ -2,29 +2,27 @@
 title: Enable Remote Management
 description:
 date: 2018-02-03
-tags:
-  - mac
-  - remote
-  - management
+disclaimer:
+  text: This is an old post. Contant may be out of date.
 ---
 
 Apple Remote Desktop can be enabled and configured via the command line:
 
 Grant all remote control privileges to user johnsmith:
 
-```
+```bash
 /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -on -users johnsmith -privs -all -restart -agent -menu
 ```
 
 Revoke all remote control privileges for all users, to clear unwanted settings:
 
-```
+```bash
 /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -access -off
 ```
 
 Grant ability to request screen sharing only, with explicit confirmation from the current user:
 
-```
+```bash
 /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -allowAccessFor -specifiedUsers -clientopts -setreqperm -reqperm yes -setvnclegacy -vnclegacy no -setmenuextra -menuextra no
 ```
 

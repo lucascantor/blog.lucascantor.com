@@ -2,11 +2,8 @@
 title: Add macOS Dark Mode Support to Your Website
 description:
 date: 2019-05-27
-tags:
-  - mac
-  - css
-  - web
-  - dark-mode
+disclaimer:
+  text: This is an old post. Contant may be out of date.
 ---
 
 I finally got around to adding support for macOS dark mode in my site's CSS while working on consolidating the style between my main site and my blog.
@@ -19,7 +16,7 @@ It's surprisingly easy to do via the `prefers-color-scheme` query, which support
 
 For example, the CSS I've added for my site:
 
-```
+```css
 @media (prefers-color-scheme: dark) {
   body {
     color: #ddd;
