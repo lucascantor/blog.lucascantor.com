@@ -3,7 +3,7 @@ title: Start the Screensaver
 description:
 date: 2018-03-31
 disclaimer:
-  text: This is an old post. Contant may be out of date.
+  text: This is an old post. Content may be out of date.
 ---
 
 The screensaver engine on a Mac can be invoked from the command line. This can be useful for locking a Mac remotely if its security settings are configured to require a password after waking, but without needing to put the Mac fully to sleep:

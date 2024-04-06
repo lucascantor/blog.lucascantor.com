@@ -3,7 +3,7 @@ title: Disable Printer Sharing
 description:
 date: 2018-05-11
 disclaimer:
-  text: This is an old post. Contant may be out of date.
+  text: This is an old post. Content may be out of date.
 ---
 
 You can disable macOS printer sharing for all printers using the `lpstat` and `lpadmin` tools:

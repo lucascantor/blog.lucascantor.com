@@ -3,7 +3,7 @@ title: Install Backblaze Silently from the Command Line
 description:
 date: 2018-04-21
 disclaimer:
-  text: This is an old post. Contant may be out of date.
+  text: This is an old post. Content may be out of date.
 ---
 
 You can install Backblaze silently from the command line by running the `bzinstall_mate` utility within the `Backblaze Installer.app`.

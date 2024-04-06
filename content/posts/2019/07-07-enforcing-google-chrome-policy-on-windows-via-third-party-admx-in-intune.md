@@ -3,7 +3,7 @@ title: Enforcing Google Chrome Policy on Windows via Third-Party ADMX in Intune
 description:
 date: 2019-07-07
 disclaimer:
-  text: This is an old post. Contant may be out of date.
+  text: This is an old post. Content may be out of date.
 ---
 
 I've been following the Windows MDM landscape closely as it's evolved drastically over the course of the past few years, as capabilities to enforce the same policies one might take for granted in a legacy Active Directory environment have slowly trickled into Microsoft's own native Intune system. As Windows use has also become more common in my corporate environment, which happens to be a G Suite shop, the ability to enforce Google Chrome policy on Windows has become increasingly important as well.
