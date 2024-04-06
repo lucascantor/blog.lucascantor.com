@@ -3,7 +3,7 @@ title: Enable Remote Management
 description:
 date: 2018-02-03
 disclaimer:
-  text: This is an old post. Contant may be out of date.
+  text: This is an old post. Content may be out of date.
 ---
 
 Apple Remote Desktop can be enabled and configured via the command line:

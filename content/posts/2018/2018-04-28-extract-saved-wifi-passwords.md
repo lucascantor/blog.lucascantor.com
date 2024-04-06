@@ -3,7 +3,7 @@ title: Extract Saved WiFi Passwords from the macOS Keychain
 description:
 date: 2018-04-28
 disclaimer:
-  text: This is an old post. Contant may be out of date.
+  text: This is an old post. Content may be out of date.
 ---
 
 You can extract saved wifi passwords from the macOS Keychain using the `security` command:

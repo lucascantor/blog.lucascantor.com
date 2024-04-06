@@ -3,7 +3,7 @@ title: Schedule Repeating Reboots
 description:
 date: 2018-03-10
 disclaimer:
-  text: This is an old post. Contant may be out of date.
+  text: This is an old post. Content may be out of date.
 ---
 
 The `pmset` utility can be used to schedule repeating reboots, replacing `MTWRFSU 04:00:00` with your desired day(s) of the week and time of day:

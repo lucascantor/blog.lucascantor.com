@@ -3,7 +3,7 @@ title: Add macOS Dark Mode Support to Your Website
 description:
 date: 2019-05-27
 disclaimer:
-  text: This is an old post. Contant may be out of date.
+  text: This is an old post. Content may be out of date.
 ---
 
 I finally got around to adding support for macOS dark mode in my site's CSS while working on consolidating the style between my main site and my blog.

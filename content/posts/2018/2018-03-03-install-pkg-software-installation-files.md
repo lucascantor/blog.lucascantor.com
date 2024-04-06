@@ -3,7 +3,7 @@ title: Install .pkg Software Installation Files
 description:
 date: 2018-03-03
 disclaimer:
-  text: This is an old post. Contant may be out of date.
+  text: This is an old post. Content may be out of date.
 ---
 
 The `installer` utility can be used to install .pkg software installation files from the command line:

@@ -3,7 +3,7 @@ title: Manage FileVault-Authorized Users
 description:
 date: 2018-02-17
 disclaimer:
-  text: This is an old post. Contant may be out of date.
+  text: This is an old post. Content may be out of date.
 ---
 
 The `fdesetup` utility can be used to manage which users are authorized to unlock FileVault encrypted boot volumes:

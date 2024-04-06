@@ -3,7 +3,7 @@ title: Install Vendor-Hosted Software via curl
 description:
 date: 2018-10-24
 disclaimer:
-  text: This is an old post. Contant may be out of date.
+  text: This is an old post. Content may be out of date.
 ---
 
 ## Background

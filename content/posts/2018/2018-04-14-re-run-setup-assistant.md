@@ -3,7 +3,7 @@ title: Re-Run the macOS Setup Assistant
 description:
 date: 2018-04-14
 disclaimer:
-  text: This is an old post. Contant may be out of date.
+  text: This is an old post. Content may be out of date.
 ---
 
 You can re-run the macOS Setup Assistant on the next boot by removing the `.AppleSetupDone` file:

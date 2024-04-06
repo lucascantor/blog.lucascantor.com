@@ -3,7 +3,7 @@ title: Create a Bootable macOS Installation Disk
 description:
 date: 2018-03-17
 disclaimer:
-  text: This is an old post. Contant may be out of date.
+  text: This is an old post. Content may be out of date.
 ---
 
 The `createinstallmedia` utility can be used to create a bootable macOS installation disk, which is useful for installing macOS on multiple Macs without downloading the installer over the Internet each time:
