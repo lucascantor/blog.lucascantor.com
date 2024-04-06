@@ -103,6 +103,10 @@ module.exports = {
       url: 'https://github.com/lucascantor',
       title: 'GitHub',
     },
+    {
+      url: 'https://hardcover.app/@lucascantor',
+      title: 'Hardcover',
+    },
   ],
   // ---------------------------------------------------------------------------
   // Default settings for OpenGraph functionality (tags and generated images)
