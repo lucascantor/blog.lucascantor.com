@@ -3,11 +3,7 @@ title: An iPhone App Built for Two
 description:
 date: 2023-10-16
 tags:
-  - iPhone
-  - iOS
-  - apps
-  - swift
-  - swiftUI
+  - iOS Dev
 ---
 
 ## Hello Again 👋🏼

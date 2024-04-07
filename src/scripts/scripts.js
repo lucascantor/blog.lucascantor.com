@@ -169,7 +169,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const postLists = document.querySelectorAll('.archive .list');
 
   const archiveYearHeadings = document.querySelectorAll(
-    `.archive ${yearHeadingSelector}`
+    `.archive ${yearHeadingSelector}`,
   );
 
   const handleArchiveToggle = (e) => {
@@ -222,7 +222,8 @@ window.addEventListener('DOMContentLoaded', () => {
       .split(/\/[0-9]+\//)[0]
       .replace(/\/+$/, '');
 
-    const newLocation = pageNumber === 1 ? pageUrl : `${pageUrl}/${pageNumber}`;
+    const newLocation =
+      pageNumber === 1 ? pageUrl : `${pageUrl}/${pageNumber}/`;
 
     window.location.href = newLocation;
   };
@@ -232,7 +233,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const currentPageNumber = parseInt(pageNumberInput.value);
 
     const totalPages = parseInt(
-      document.querySelector('.total-pages').innerHTML
+      document.querySelector('.total-pages').innerHTML,
     );
 
     const isPageNumberAllowed = (pageNumber) => {
@@ -297,26 +298,26 @@ window.addEventListener('DOMContentLoaded', () => {
   // Mastodon share button
 
   const mastodonShareForm = htmlElement.querySelector(
-    '.share-buttons .mastodon-share-form'
+    '.share-buttons .mastodon-share-form',
   );
 
   const mastodonShareButton = htmlElement.querySelector(
-    '.share-buttons .mastodon'
+    '.share-buttons .mastodon',
   );
   const mastodonShareDialog = htmlElement.querySelector(
-    '.share-buttons .mastodon-share-dialog'
+    '.share-buttons .mastodon-share-dialog',
   );
 
   const mastodonDialogCloseLink = htmlElement.querySelector(
-    '.mastodon-share-dialog .close-link'
+    '.mastodon-share-dialog .close-link',
   );
 
   const instanceUrlInput = htmlElement.querySelector(
-    '.mastodon-share-dialog .instance-url-input'
+    '.mastodon-share-dialog .instance-url-input',
   );
 
   const shareSubmitButton = htmlElement.querySelector(
-    '.mastodon-share-dialog .share-form-submit'
+    '.mastodon-share-dialog .share-form-submit',
   );
 
   const isMastodonInstanceValid = (value) => {
@@ -368,7 +369,7 @@ window.addEventListener('DOMContentLoaded', () => {
           encodeURIComponent(title) +
           ' ' +
           encodeURIComponent(href),
-        '_blank'
+        '_blank',
       );
     });
 
@@ -388,7 +389,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Copy to clipboard button
 
   const copyToClipboardButton = htmlElement.querySelector(
-    '.share-buttons .clipboard'
+    '.share-buttons .clipboard',
   );
 
   if (copyToClipboardButton) {

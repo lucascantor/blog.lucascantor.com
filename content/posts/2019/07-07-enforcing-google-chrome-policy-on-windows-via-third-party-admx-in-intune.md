@@ -2,6 +2,10 @@
 title: Enforcing Google Chrome Policy on Windows via Third-Party ADMX in Intune
 description:
 date: 2019-07-07
+tags:
+  - Old Post
+  - Mac Admin
+  - Windows Admin
 disclaimer:
   text: This is an old post. Content may be out of date.
 ---

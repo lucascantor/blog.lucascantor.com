@@ -3,9 +3,9 @@ title: Terraform Cloud Dynamic Provider Credentials
 description:
 date: 2023-12-27
 tags:
-  - infrastructure-as-code
-  - terraform
-  - security
+  - Infrastructure as Code
+  - Terraform
+  - AWS
 ---
 
 After years without a good solution to my "static AWS IAM user secrets" problem, I've recently set up [Dynamic Provider Credentials](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials) for AWS in my Terraform Cloud org.

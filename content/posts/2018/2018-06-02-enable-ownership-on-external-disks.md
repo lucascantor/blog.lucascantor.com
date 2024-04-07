@@ -2,6 +2,9 @@
 title: Enable Ownership on External Disks
 description:
 date: 2018-06-02
+tags:
+  - Old Post
+  - Mac Admin
 disclaimer:
   text: This is an old post. Content may be out of date.
 ---

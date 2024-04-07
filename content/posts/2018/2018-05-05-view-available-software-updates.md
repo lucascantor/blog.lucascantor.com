@@ -2,6 +2,9 @@
 title: View Available Software Updates in the Mac App Store
 description:
 date: 2018-05-05
+tags:
+  - Old Post
+  - Mac Admin
 disclaimer:
   text: This is an old post. Content may be out of date.
 ---
