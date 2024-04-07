@@ -2,6 +2,9 @@
 title: Set the Login Window Text
 description:
 date: 2018-04-07
+tags:
+  - Old Post
+  - Mac Admin
 disclaimer:
   text: This is an old post. Content may be out of date.
 ---

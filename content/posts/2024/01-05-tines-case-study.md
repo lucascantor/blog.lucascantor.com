@@ -3,10 +3,7 @@ title: Tines Case Study
 description:
 date: 2024-01-05
 tags:
-  - no-code
-  - tines
-  - featured-work
-  - case-study
+  - No-Code
 ---
 
 I'm excited to announce that [Tines has published a case study](https://www.tines.com/case-studies/intercom) based on my recent work deploying it as a business process automation platform for IT, InfoSec, and the entire company at Intercom! 🎉

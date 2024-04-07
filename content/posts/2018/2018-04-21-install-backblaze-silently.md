@@ -2,6 +2,9 @@
 title: Install Backblaze Silently from the Command Line
 description:
 date: 2018-04-21
+tags:
+  - Old Post
+  - Mac Admin
 disclaimer:
   text: This is an old post. Content may be out of date.
 ---

@@ -2,6 +2,9 @@
 title: Install Vendor-Hosted Software via curl
 description:
 date: 2018-10-24
+tags:
+  - Old Post
+  - Mac Admin
 disclaimer:
   text: This is an old post. Content may be out of date.
 ---
