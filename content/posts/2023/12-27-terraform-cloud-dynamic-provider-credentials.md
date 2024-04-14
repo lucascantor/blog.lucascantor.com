@@ -6,6 +6,7 @@ tags:
   - Infrastructure as Code
   - Terraform
   - AWS
+disclaimer:
 ---
 
 After years without a good solution to my "static AWS IAM user secrets" problem, I've recently set up [Dynamic Provider Credentials](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials) for AWS in my Terraform Cloud org.
