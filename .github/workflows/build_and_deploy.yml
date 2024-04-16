@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  AWS_ROLE_ARN: 'CHANGE_ME'
+  AWS_ROLE_ARN: 'arn:aws:iam::042672036044:role/github-actions-sts-assumption-role'
   AWS_S3_BUCKET_NAME: 'blog.lucascantor.com'
   AWS_REGION: 'us-east-1'
 
