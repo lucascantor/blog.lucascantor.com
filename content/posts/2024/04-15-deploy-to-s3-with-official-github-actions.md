@@ -175,12 +175,6 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Set environment variables
-env:
-  AWS_ROLE_ARN: 'arn:aws:iam::111111111111:role/github-actions-sts-assumption-role'
-  AWS_S3_BUCKET_NAME: 'example.com'
-  AWS_REGION: 'us-east-1'
-
 # Sets required permissions of the GITHUB_TOKEN
 permissions:
   contents: read # Required for actions/checkout
@@ -207,10 +201,10 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: ${{ env.AWS_ROLE_ARN }}
-          aws-region: ${{ env.AWS_REGION }}
+          role-to-assume: arn:aws:iam::<YOUR_AWS_ACCOUNT_ID>:role/github-actions-sts-assumption-role
+          aws-region: us-east-1
 
       - name: Deploy site to S3
         run: |
-          aws s3 sync ./_site s3://${{ env.AWS_S3_BUCKET_NAME }}/ --delete
+          aws s3 sync ./_site s3://example.com/ --delete
 ```
