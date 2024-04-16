@@ -23,7 +23,7 @@ Unfortunately, this configuration meant that if I ever exceeded the AWS free Usa
 
 ## An Ideal Solution
 
-It looks like I'm late to the party, but there's a ["Configure AWS Credentials" GitHub Action](https://github.com/marketplace/actions/configure-aws-credentials-action-for-github-actions) from the official aws-actions GitHub org This is _exactly_ what I've been looking for, because it means I don't need to trust any third-party dependencies.
+It looks like I'm late to the party, but there's a ["Configure AWS Credentials" GitHub Action](https://github.com/marketplace/actions/configure-aws-credentials-action-for-github-actions) from the official aws-actions GitHub org. This is _exactly_ what I've been looking for, because it means I don't need to trust any third-party dependencies.
 
 Even better, this official GitHub Action has support to authenticate by assuming an AWS role directly via a GitHub OIDC identity provider in AWS. This is _also_ exactly what I've been looking for, because it means I don't need to create any long-lived static AWS IAM secrets to store in GitHub. You can see my [Terraform Cloud Dynamic Provider Credentials](https://blog.lucascantor.com/terraform-cloud-dynamic-provider-credentials/) post for a more in-depth explanation of the benefits of an analagous setup between AWS and Terraform Cloud.
 
