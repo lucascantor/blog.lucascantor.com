@@ -143,18 +143,6 @@ data "aws_iam_policy_document" "example_com_s3" {
   }
 }
 
-# Attachment of AWS-managed admin policy to admin group
-resource "aws_iam_group_policy_attachment" "admin_group_admin_policy" {
-  group      = aws_iam_group.admin.name
-  policy_arn = data.aws_iam_policy.admin.arn
-}
-
-# Attachment of AWS-managed admin policy to Terraform Cloud STS assumption role
-resource "aws_iam_role_policy_attachment" "terraform_cloud_sts_assumption_role_admin_policy" {
-  role       = aws_iam_role.terraform_cloud_sts_assumption_role.name
-  policy_arn = data.aws_iam_policy.admin.arn
-}
-
 # Attachment of policy granting read-write access to example.com S3 bucket to GitHub Actions STS assumption role
 resource "aws_iam_role_policy_attachment" "github_actions_sts_assumption_role_admin_policy" {
   role       = aws_iam_role.github_actions_sts_assumption_role.name
