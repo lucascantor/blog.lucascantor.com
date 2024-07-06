@@ -100,12 +100,20 @@ module.exports = {
       title: 'Glass',
     },
     {
-      url: 'https://github.com/lucascantor',
-      title: 'GitHub',
+      url: 'https://letterboxd.com/lucascantor',
+      title: 'Letterboxd',
     },
     {
       url: 'https://hardcover.app/@lucascantor',
       title: 'Hardcover',
+    },
+    {
+      url: 'https://github.com/lucascantor',
+      title: 'GitHub',
+    },
+    {
+      url: 'https://linkedin.com/in/lucascantor',
+      title: 'LinkedIn',
     },
   ],
   // ---------------------------------------------------------------------------
