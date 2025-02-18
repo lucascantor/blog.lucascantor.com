@@ -19,7 +19,7 @@ So what does this look like in practice? Revisiting the above `department` profi
 
 ![Adding a custom Okta profile attribute as an enumerated list of valid values](/images/add-attribute.png)
 
-If your HR team wants to start sending different values from your HRIS to Okta for this profile attribute, they'll need to coordinate a proper change management request with you to update the enumerated list of values first! Otherwise, the updates simply won't happen. Now, this is a great failsafe, since it prevents the sort of catastophic mass-unassignment of apps described above... but it's not exactly ideal either, since this will be entirely silent, and neither you nor your HR team will know there's a problem that needs to be addressed.
+If your HR team wants to start sending different values from your HRIS to Okta for this profile attribute, they'll need to coordinate a proper change management request with you to update the enumerated list of values first! Otherwise, the updates simply won't happen. Now, this is a great failsafe, since it prevents the sort of catastrophic mass-unassignment of apps described above... but it's not exactly ideal either, since this will be entirely silent, and neither you nor your HR team will know there's a problem that needs to be addressed.
 
 Luckily, you can easily automate monitoring and alerting for when invalid data is being imported from your HRIS into Okta too. Let's say your HRIS is Workday. In that case, create a new group in Okta called `Invalid Workday Data` for users with invalid data coming into Okta from Workday as your profile source. Then you can create a group rule to add users to this new `Invalid Workday Data` group if their `department` profile attribute value isn't equal to their `department_enum` profile attribute value. With both of these profile attributes mapped identically in Okta from the same value in Workday, this rule will _only_ apply to users with a value in Workday that isn't in your enumerated list of valid values:
 
@@ -27,7 +27,7 @@ Luckily, you can easily automate monitoring and alerting for when invalid data i
 
 From this point, you can use whatever method you prefer to monitor your Okta tenant for users being added to this group. You can use this monitor to alert your HR team whenever they send invalid values from your HRIS, and have them either correct the values they're sending, or coordinate a proper change management request with you to update the enumerated list of valid values in Okta.
 
-This same technique applies if you want to validate multiple Okta profile attributes, or course. For example, you could create a new custom enum profile attribute to replace `costCenter` in your Okta group rules, e.g., `costCenter_enum`, into which you can map the exact same cost center value from your HRIS profile source. Then you would just need to edit your existing Okta group rule to apply to either the department or the cost center value being invalid:
+This same technique applies if you want to validate multiple Okta profile attributes, of course. For example, you could create a new custom enum profile attribute to replace `costCenter` in your Okta group rules, e.g., `costCenter_enum`, into which you can map the exact same cost center value from your HRIS profile source. Then you would just need to edit your existing Okta group rule to apply to either the department or the cost center value being invalid:
 
 ![Editing an Okta group rule for invalid Workday data](/images/edit-rule.png)
 
