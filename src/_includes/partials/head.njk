@@ -2,7 +2,7 @@
 <meta name="description" content="{{ description or site.description }}">
 <meta name="author" content="{{ author.name or site.author.name }}">
 {% if page.url.startsWith('/posts/') %}
-<meta name="fediverse:creator" content="{{ site.social.mastodon }}">
+{% include "partials/fediverse.njk" %}
 {% endif %}
 
 <!-- Open Graph / Facebook -->
