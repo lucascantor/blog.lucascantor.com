@@ -1,0 +1,34 @@
+<aside class="nextprev-section">
+	<div class="nextprev-wrap">
+		{% set prevPost = collections.posts | getPreviousCollectionItem(page) %}
+		{% if prevPost %}
+		<section class="nextprev-newer {{ prevPost.data.post_class or '' }}">
+			<a href="{{ prevPost.url }}" class="global-link" aria-label="{{ prevPost.data.title }}"></a>
+			{% if prevPost.data.feature_image %}
+			<a href="{{ prevPost.url }}" class="nextprev-image global-image">
+				<img src="{{ prevPost.data.feature_image }}" alt="{{ prevPost.data.title }}">
+			</a>
+			{% endif %}
+			<div>
+				<small>Newer post</small>
+				<h3><a href="{{ prevPost.url }}">{{ prevPost.data.title }}</a></h3>
+			</div>
+		</section>
+		{% endif %}
+		{% set nextPost = collections.posts | getNextCollectionItem(page) %}
+		{% if nextPost %}
+		<section class="nextprev-older {{ nextPost.data.post_class or '' }}">
+			<a href="{{ nextPost.url }}" class="global-link" aria-label="{{ nextPost.data.title }}"></a>
+			<div>
+				<small>Older post</small>
+				<h3><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></h3>
+			</div>
+			{% if nextPost.data.feature_image %}
+			<a href="{{ nextPost.url }}" class="nextprev-image global-image">
+				<img src="{{ nextPost.data.feature_image }}" alt="{{ nextPost.data.title }}">
+			</a>
+			{% endif %}
+		</section>
+		{% endif %}
+	</div>
+</aside>

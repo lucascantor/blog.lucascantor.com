@@ -1,0 +1,44 @@
+<footer class="footer-section global-footer">
+	<div class="footer-wrap">
+		<div class="footer-data">
+			<div class="footer-logo">
+				{% include "partials/logo.njk" %}
+			</div>
+			{% if site.description %}
+			<p class="footer-description">{{ site.description }}</p>
+			{% endif %}
+			<div class="footer-icons">
+				{% if site.social.mastodon %}
+				<a href="{{ site.social.mastodon }}" aria-label="link Mastodon" rel="me">{% include "partials/icons/social/mastodon.njk" %}</a>
+				{% endif %}
+				{% if site.social.github %}
+				<a href="{{ site.social.github }}" aria-label="link GitHub" rel="me">{% include "partials/icons/social/github.njk" %}</a>
+				{% endif %}
+				{% if site.social.glass %}
+				<a href="{{ site.social.glass }}" aria-label="link Glass" rel="me">{% include "partials/icons/social/glass.njk" %}</a>
+				{% endif %}
+				{% if site.social.linkedin %}
+				<a href="{{ site.social.linkedin }}" aria-label="link LinkedIn" rel="me">{% include "partials/icons/social/linkedin.njk" %}</a>
+				{% endif %}
+				{% include "partials/footer_icons.njk" %}
+			</div>
+		</div>
+		<div class="footer-nav">
+			{% if site.secondary_navigation %}
+			<ul>
+				{% for item in site.secondary_navigation %}
+				<li><a href="{{ item.url | url }}">{{ item.label }}</a></li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+		</div>
+	</div>
+	<div class="footer-copyright">
+		&copy; {% year %} <a href="{{ site.url }}">{{ site.title }}</a>.
+		{% if settings.footer_copyright %}
+		{{ settings.footer_copyright | safe }}
+		{% else %}
+		All Right Reserved. Published with <a href="https://11ty.dev" target="_blank" rel="noopener noreferrer">Eleventy</a> & <a href="https://fueko.net" target="_blank" rel="noopener">Okiro</a>
+		{% endif %}
+	</div>
+</footer>

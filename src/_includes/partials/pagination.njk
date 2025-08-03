@@ -1,0 +1,12 @@
+{% if pagination.href.previous or pagination.href.next %}
+<nav class="pagination-section">
+	<div class="pagination-wrap">
+		{% if pagination.href.previous %}
+		<a href="{{ pagination.href.previous }}" class="pagination-prev">{{ "newer-posts" | t }}</a>
+		{% endif %}
+		{% if pagination.href.next %}
+		<a href="{{ pagination.href.next }}" class="pagination-next">{{ "older-posts" | t }}</a>
+		{% endif %}
+	</div>
+</nav>
+{% endif %}

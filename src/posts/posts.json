@@ -1,0 +1,6 @@
+{
+  "layout": "layouts/post.njk",
+  "permalink": "/posts/{{ title | slug }}/",
+  "language": "en",
+  "published": true
+}

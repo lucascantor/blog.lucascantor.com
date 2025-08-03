@@ -1,0 +1,52 @@
+---
+pagination:
+  data: collections.tags
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag | slug }}/
+layout: layouts/base.njk
+eleventyComputed:
+  title: "{{ tag }}"
+---
+
+{% set taggedPosts = collections.posts | where("data.tags", tag) %}
+
+{# Archive section with tag info #}
+<div class="archive-section">
+	<div class="archive-wrap">
+		<div class="archive-container is-custom">
+			<div class="archive-content is-custom">
+				<h1 class="archive-title">{{ tag | title }}</h1>
+			</div>
+		</div>
+		<div class="archive-counter is-custom">
+			<span>{{ taggedPosts.length }}</span>
+			<span>
+				{% if taggedPosts.length == 0 %}
+				No posts
+				{% elif taggedPosts.length == 1 %}
+				Post
+				{% else %}
+				Posts
+				{% endif %}
+			</span>
+		</div>
+	</div>
+</div>
+
+{# Posts loop #}
+<div class="loop-section">
+	<div class="loop-wrap">
+		{% if taggedPosts.length > 0 %}
+			{% for post in taggedPosts %}
+				{% set item_first = loop.first %}
+				{% include "partials/loop_item.njk" %}
+			{% endfor %}
+		{% else %}
+			<div class="no-posts">
+				<p>No posts found with the tag "{{ tag }}".</p>
+			</div>
+		{% endif %}
+	</div>
+</div>
+

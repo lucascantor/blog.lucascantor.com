@@ -1,0 +1,30 @@
+<!-- Meta tags for SEO -->
+<meta name="description" content="{{ description or site.description }}">
+<meta name="author" content="{{ author.name or site.author.name }}">
+{% if page.url.startsWith('/posts/') %}
+<meta name="fediverse:creator" content="{{ site.social.mastodon }}">
+{% endif %}
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{{ title or site.title }}">
+<meta property="og:description" content="{{ description or site.description }}">
+{% if feature_image %}
+<meta property="og:image" content="{{ feature_image }}">
+{% endif %}
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta property="twitter:title" content="{{ title or site.title }}">
+<meta property="twitter:description" content="{{ description or site.description }}">
+{% if feature_image %}
+<meta property="twitter:image" content="{{ feature_image }}">
+{% endif %}
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+<!-- RSS Feed -->
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
