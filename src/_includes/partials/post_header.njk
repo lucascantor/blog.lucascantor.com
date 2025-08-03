@@ -1,0 +1,46 @@
+<div
+  class="post-header item is-hero{% if not feature_image %} no-image{% endif %}"
+>
+  <div class="item-container">
+    {% if feature_image %}
+    <div class="item-image global-image">
+      <img src="{{ feature_image }}" alt="{{ title }}" />
+    </div>
+    {% endif %}
+    <div class="item-content">
+      <div class="item-tags global-tags">
+        {% if tags %} {% for tag in tags %}
+        <a href="/tags/{{ tag | slug }}/">{{ tag }}</a>
+        {% endfor %} {% endif %}
+      </div>
+      <h1 class="item-title">{{ title }}</h1>
+      {% if excerpt %}
+      <p class="item-excerpt global-zigzag">
+        {% include "partials/icons/site/zigzag.njk" %} {{ excerpt }}
+      </p>
+      {% endif %}
+      <div class="item-meta global-meta">
+        {% if settings.show_author and author %}
+        <div class="item-profile-image">
+          {% if author.image %}
+          <a href="/about/" class="global-image">
+            <img src="{{ author.image }}" alt="{{ author.name }}" />
+          </a>
+          {% endif %}
+        </div>
+        {% endif %}
+        <div class="item-authors">
+          {% if settings.show_author and author %}
+          <a href="/about/">{{ author.name }}</a>
+          {% endif %}
+          <div class="item-time">
+            <time datetime="{{ date | dateISO }}"
+              >{{ date | dateFormat("LLLL dd, yyyy") }}</time
+            >
+            ∙ {{ content | excerpt | split(' ') | length }} min read
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

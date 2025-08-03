@@ -1,0 +1,25 @@
+<div class="loop-section">
+	<div class="loop-wrap">
+		{% if not pagination or pagination.pageNumber == 0 %}
+			{% set firstPost = collections.posts | slice(0, 1) %}
+			{% for post in firstPost %}
+				{% set item_first = true %}
+				{% include "partials/loop_item.njk" %}
+			{% endfor %}
+			<div>
+			{% set restPosts = collections.posts | slice(1) %}
+			{% for post in restPosts %}
+				{% set item_first = false %}
+				{% include "partials/loop_item.njk" %}
+			{% endfor %}
+			</div>
+		{% else %}
+			<div>
+			{% for post in pagination.items %}
+				{% set item_first = false %}
+				{% include "partials/loop_item.njk" %}
+			{% endfor %}
+			</div>
+		{% endif %}
+	</div>
+</div>

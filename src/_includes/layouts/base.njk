@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ site.locale }}"{% if settings.color_scheme == "Dark" %} class="dark-mode"{% elif settings.color_scheme == "Auto" %} class="auto-dark-mode"{% endif %}>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>{% if title and page.url != "/" %}{{ title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+		<meta name="HandheldFriendly" content="True">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{% include "partials/services/google_fonts.njk" %}
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css">
+		{% block post_css %}{% endblock %}
+		{% include "partials/head.njk" %}
+	</head>
+	<body class="{{ page | bodyClass }}">
+		<div class="global-wrap">
+			<div class="global-content">
+				{% include "partials/header.njk" %}
+				<main class="global-main">
+					{{ content | safe }}
+				</main>
+				{% include "partials/footer.njk" %}
+			</div>
+		</div>
+		<script src="/assets/js/global.js"></script>
+		{% if pagination.pages %}
+		<script src="/assets/js/index.js"></script>
+		{% endif %}
+		{% if page.url.startsWith('/posts/') %}
+		<script src="/assets/js/post.js"></script>
+		{% endif %}
+		{% block search_js %}{% endblock %}
+		{% block notifications_js %}{% endblock %}
+		{% block account_js %}{% endblock %}
+		{% block membership_js %}{% endblock %}
+		{% block author_js %}{% endblock %}
+		{% include "partials/foot.njk" %}
+	</body>
+</html>

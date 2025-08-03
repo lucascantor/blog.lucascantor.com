@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+---
+
+<progress class="post-progress"></progress>
+<article class="post-section">
+	{% include "partials/post_header.njk" %}
+	<div class="post-content">
+		{{ content | safe }}
+	</div>
+</article>
+{% include "partials/post_nextprev.njk" %}
+<div class="comments-section">
+	<div class="comments-wrap">
+		{% if settings.disqus_shortname %}
+		{% include "partials/services/disqus.njk" %}
+		{% endif %}
+	</div>
+</div>
+{% include "partials/post_related.njk" %}

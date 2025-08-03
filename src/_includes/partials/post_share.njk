@@ -1,0 +1,14 @@
+<div class="post-share">
+	<h4>Share this post</h4>
+	<div class="post-share-links">
+		<a href="https://twitter.com/intent/tweet?text={{ title | urlencode }}&url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" aria-label="Share on Twitter">
+			{% include "partials/icons/social/x.njk" %}
+		</a>
+		<a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" aria-label="Share on Facebook">
+			{% include "partials/icons/social/facebook.njk" %}
+		</a>
+		<a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" aria-label="Share on LinkedIn">
+			{% include "partials/icons/social/linkedin.njk" %}
+		</a>
+	</div>
+</div>

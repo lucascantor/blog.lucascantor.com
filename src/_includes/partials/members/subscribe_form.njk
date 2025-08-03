@@ -1,0 +1,13 @@
+<!-- Subscribe form placeholder -->
+{% if not page.url.startsWith('/posts/') %}
+<section class="subscribe-section">
+	<div class="subscribe-wrap">
+		<h3>Subscribe to {{ site.title }}</h3>
+		<p>{{ site.description }}</p>
+		<form class="subscribe-form">
+			<input type="email" placeholder="Your email address" required>
+			<button type="submit">Subscribe</button>
+		</form>
+	</div>
+</section>
+{% endif %}

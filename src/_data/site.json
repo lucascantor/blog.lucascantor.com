@@ -1,0 +1,28 @@
+{
+  "title": "Lucas Cantor",
+  "description": "InfoSec Now, Serenity Later",
+  "url": "/",
+  "locale": "en",
+  "author": {
+    "name": "Lucas Cantor",
+    "email": "lucas@cantor.cloud",
+    "url": "/"
+  },
+  "posts_per_page": 6,
+  "navigation": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "About",
+      "url": "/about/"
+    }
+  ],
+  "social": {
+    "mastodon": "https://infosec.exchange/@lucas",
+    "github": "https://github.com/lucascantor",
+    "linkedin": "https://linkedin.com/in/lucascantor",
+    "glass": "https://glass.photo/lucascantor"
+  }
+}

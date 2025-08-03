@@ -1,0 +1,21 @@
+<!-- Special sections placeholder -->
+{% if settings.tag_for_special_section %}
+{% set special_posts = collections.posts | where("data.tags", settings.tag_for_special_section) | slice(0, 3) %}
+{% if special_posts.length > 0 %}
+<div class="sections-area">
+	<h2>Special Section</h2>
+	<div class="sections-wrap">
+		{% for post in special_posts %}
+		<article class="section-item">
+			<a href="{{ post.url }}">
+				{% if post.data.feature_image %}
+				<img src="{{ post.data.feature_image }}" alt="{{ post.data.title }}">
+				{% endif %}
+				<h3>{{ post.data.title }}</h3>
+			</a>
+		</article>
+		{% endfor %}
+	</div>
+</div>
+{% endif %}
+{% endif %}

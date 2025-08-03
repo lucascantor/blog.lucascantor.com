@@ -1,0 +1,26 @@
+<header class="header-section">
+	<div class="header-wrap">
+		<div class="header-logo{% if site.logo or settings.logo_for_dark_color_scheme %} is-image{% endif %}">
+			{% include "partials/logo.njk" %}
+		</div>
+		<div class="header-nav">
+			<input id="toggle" class="header-checkbox" type="checkbox">
+			<label class="header-toggle" for="toggle">
+				<span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</span>
+			</label>
+			<nav class="is-search">
+				<ul>
+					{% for item in site.navigation %}
+					<li><a href="{{ item.url | url }}">{{ item.label }}</a></li>
+					{% endfor %}
+				</ul>
+				<ul>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>

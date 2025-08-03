@@ -1,0 +1,86 @@
+{% if item_first %}
+<article class="item is-hero{% if not post.data.feature_image %} no-image{% endif %}">
+	{% if post.data.feature_image %}
+	<small class="item-label global-label global-zigzag">
+		{{ "Latest posts" | t }}
+		{% include "partials/icons/site/zigzag.njk" %}
+	</small>
+	{% endif %}
+	<div class="item-container">
+		{% if post.data.feature_image %}
+		<a href="{{ post.url }}" class="item-image global-image">
+			<img src="{{ post.data.feature_image }}" alt="{{ post.data.title }}">
+		</a>
+		{% endif %}
+		<div class="item-content">
+			<div class="item-tags global-tags">
+				{% if post.data.tags %}
+				{% for tag in post.data.tags | slice(0, 1) %}
+				<a href="/tags/{{ tag | slug }}/">{{ tag }}</a>
+				{% endfor %}
+				{% endif %}
+			</div>
+			{% if page.url == "/" %}
+			<h1 class="item-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
+			{% else %}
+			<h2 class="item-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+			{% endif %}
+			{# Excerpt removed for cleaner home page display #}
+			<div class="item-meta global-meta">
+				{% if settings.show_author and post.data.author %}
+				<div class="item-profile-image">
+					{% if post.data.author.image %}
+					<a href="/about/" class="global-image">
+						<img src="{{ post.data.author.image }}" alt="{{ post.data.author.name }}">
+					</a>
+					{% endif %}
+				</div>
+				{% endif %}
+				<div class="item-authors">
+					{% if settings.show_author and post.data.author %}
+					<a href="/about/">{{ post.data.author.name }}</a>
+					{% endif %}
+					<div class="item-time">
+						<time datetime="{{ post.date | dateISO }}">{{ post.date | dateFormat("LLLL dd, yyyy") }}</time> ∙ {{ post.content | excerpt | split(' ') | length }} min read
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+{% else %}
+<article class="item {{ post.data.post_class or '' }}">
+	<a href="{{ post.url }}" class="global-link" aria-label="{{ post.data.title }}"></a>
+	<div class="item-container">
+		{% if post.data.feature_image %}
+		<div class="item-image global-image">
+			<img src="{{ post.data.feature_image }}" alt="{{ post.data.title }}">
+		</div>
+		{% endif %}
+		<div class="item-content">
+			<h2 class="item-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+			{% if settings.show_author and post.data.author %}
+			<div class="item-meta global-meta global-pointer">
+				<div>
+					<a href="/about/">{{ post.data.author.name }}</a>
+				</div>
+			</div>
+			{% endif %}
+			{% if not post.data.feature_image %}
+				{% if post.data.excerpt %}
+				<p class="global-excerpt">
+					{{ post.data.excerpt | truncate(72) }}...
+				</p>
+				{% endif %}
+			{% endif %}
+		</div>
+		<div class="item-tags global-tags global-pointer">
+			{% if post.data.tags %}
+			{% for tag in post.data.tags | slice(0, 1) %}
+			<a href="/tags/{{ tag | slug }}/">{{ tag }}</a>
+			{% endfor %}
+			{% endif %}
+		</div>
+	</div>
+</article>
+{% endif %}
