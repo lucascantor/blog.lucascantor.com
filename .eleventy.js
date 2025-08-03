@@ -1,4 +1,5 @@
 const { DateTime } = require("luxon");
+const sanitizeHtml = require("sanitize-html");
 
 module.exports = function(eleventyConfig) {
   // Copy assets
@@ -42,7 +43,7 @@ module.exports = function(eleventyConfig) {
   // Excerpt filter
   eleventyConfig.addFilter("excerpt", function(content, limit = 150) {
     if (!content) return '';
-    const text = content.replace(/<[^>]*>/g, '');
+    const text = sanitizeHtml(content, { allowedTags: [], allowedAttributes: {} });
     return text.length > limit ? text.substring(0, limit) + '...' : text;
   });
 
