@@ -37,7 +37,7 @@
             <time datetime="{{ date | dateISO }}"
               >{{ date | dateFormat("LLLL dd, yyyy") }}</time
             >
-            ∙ {{ content | excerpt | split(' ') | length }} min read
+            ∙ {{ content | readingTime }} min read
           </div>
         </div>
       </div>
