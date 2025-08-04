@@ -23,7 +23,7 @@ module.exports = function(eleventyConfig) {
     
     if (page.url === '/') {
       classes.push('home-template');
-    } else if (page.url.startsWith('/posts/')) {
+    } else if (page.filePathStem && page.filePathStem.startsWith('/posts/')) {
       classes.push('post-template');
     } else if (page.url.startsWith('/tags/')) {
       classes.push('tag-template');

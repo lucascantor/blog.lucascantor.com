@@ -1,7 +1,7 @@
 <!-- Meta tags for SEO -->
 <meta name="description" content="{{ description or site.description }}">
 <meta name="author" content="{{ author.name or site.author.name }}">
-{% if page.url.startsWith('/posts/') %}
+{% if page.filePathStem and page.filePathStem.startsWith('/posts/') %}
 {% include "partials/fediverse.njk" %}
 {% endif %}
 
