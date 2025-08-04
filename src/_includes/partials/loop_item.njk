@@ -41,7 +41,7 @@
 					<a href="/about/">{{ post.data.author.name }}</a>
 					{% endif %}
 					<div class="item-time">
-						<time datetime="{{ post.date | dateISO }}">{{ post.date | dateFormat("LLLL dd, yyyy") }}</time> ∙ {{ post.content | excerpt | split(' ') | length }} min read
+						<time datetime="{{ post.date | dateISO }}">{{ post.date | dateFormat("LLLL dd, yyyy") }}</time> ∙ {{ post.content | readingTime }} min read
 					</div>
 				</div>
 			</div>

@@ -2671,6 +2671,55 @@ small.global-question a:hover {
    transform: translateX(-50%);
 }
 
+/* Warning Callouts */
+.post-content blockquote.warning-callout {
+   background-color: var(--color-sand, #ffeab9);
+   border: 1px solid #e6b800;
+   border-radius: calc(var(--border-radius) / 1.5);
+   padding: 1.5em;
+   margin: 1.5em 0;
+   font-size: inherit;
+   font-weight: normal;
+   line-height: 1.5;
+   color: #8a6914;
+   position: relative;
+   box-sizing: border-box;
+}
+
+.post-content blockquote.warning-callout::before {
+   display: none;
+}
+
+.post-content blockquote.warning-callout p {
+   margin: 0 0 1em 0;
+   color: inherit;
+   font-size: inherit;
+   line-height: inherit;
+}
+
+.post-content blockquote.warning-callout p:first-child {
+   margin-top: 0;
+}
+
+.post-content blockquote.warning-callout p:last-child {
+   margin-bottom: 0;
+}
+
+/* Dark mode for warning callouts */
+@media (prefers-color-scheme: dark) {
+   .post-content blockquote.warning-callout {
+      background-color: rgba(255, 234, 185, 0.1);
+      border-color: #b8860b;
+      color: #ffd700;
+   }
+}
+
+body.dark .post-content blockquote.warning-callout {
+   background-color: rgba(255, 234, 185, 0.1);
+   border-color: #b8860b;
+   color: #ffd700;
+}
+
 /* Links
    –––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .post-content a {
@@ -2970,17 +3019,22 @@ small.global-question a:hover {
 
 .post-content p code {
    border-radius: calc(var(--border-radius) / 6);
+   background-color: var(--color-one);
 }
 
 .post-content pre > code {
    display: block;
    padding: 20px 25px;
-   white-space: pre-wrap;
+   white-space: pre;
+   overflow-x: auto;
+   border-radius: calc(var(--border-radius) / 1.5);
 }
 
 .post-content pre,
 .post-content .kg-code-card {
    min-width: 100%;
+   overflow-x: auto;
+   border-radius: calc(var(--border-radius) / 1.5);
 }
 
 .post-content .kg-code-card pre,
@@ -2988,9 +3042,20 @@ small.global-question a:hover {
    margin: 0;
 }
 
-.post-content code,
-.post-content p code {
+/* Inline code (not in pre blocks) gets background color */
+.post-content :not(pre) > code {
    background-color: var(--color-one);
+}
+
+/* Prism.js code blocks override background */
+.post-content pre[class*="language-"] {
+   background: #2d3748 !important;
+   border-radius: calc(var(--border-radius) / 1.5);
+}
+
+.post-content pre[class*="language-"] > code {
+   background: transparent;
+   padding: 20px 25px;
 }
 
 /* Image

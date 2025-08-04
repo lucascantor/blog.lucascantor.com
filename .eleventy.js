@@ -1,7 +1,10 @@
 const { DateTime } = require("luxon");
 const sanitizeHtml = require("sanitize-html");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
+  // Add syntax highlighting plugin
+  eleventyConfig.addPlugin(syntaxHighlight);
   // Copy assets
   eleventyConfig.addPassthroughCopy("src/assets/css");
   eleventyConfig.addPassthroughCopy("src/assets/js");
@@ -112,6 +115,27 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("title", function(str) {
     if (!str) return '';
     return str.toString().toLowerCase().replace(/\b\w/g, l => l.toUpperCase());
+  });
+
+  // Reading time filter
+  eleventyConfig.addFilter("readingTime", function(content) {
+    if (!content) return 0;
+    const text = sanitizeHtml(content, { allowedTags: [], allowedAttributes: {} });
+    const wordsPerMinute = 200; // Average reading speed
+    const wordCount = text.trim().split(/\s+/).length;
+    const readingTime = Math.ceil(wordCount / wordsPerMinute);
+    return readingTime;
+  });
+
+  // Escape filter for XML/RSS
+  eleventyConfig.addFilter("escape", function(str) {
+    if (!str) return '';
+    return str.toString()
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#x27;');
   });
 
   // Translation filter (basic implementation)
