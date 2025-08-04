@@ -8,9 +8,12 @@ author:
 featured: false
 tags:
   - Old Post
-disclaimer:
-  text: This is an old post. Content may be out of date.
+  - Mac Admin
 ---
+
+> ⚠️ This is an old post.
+>
+> Content may be out of date.
 
 Overwrite the macOS disk partition table and re-partition over encrypted data without causing excessive wear by explicitly erasing the full SSD:
 

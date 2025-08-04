@@ -1,17 +1,19 @@
 ---
 title: Install Backblaze Silently from the Command Line
-excerpt: "Install Backblaze backup software silently from the command line using bzinstall_mate with group credentials."
+excerpt: 'Install Backblaze backup software silently from the command line using bzinstall_mate with group credentials.'
 date: 2018-04-21
 author:
-  name: "Lucas Cantor"
-  image: "/assets/images/lucas-cantor.jpg"
+  name: 'Lucas Cantor'
+  image: '/assets/images/lucas-cantor.jpg'
 featured: false
 tags:
   - Old Post
   - Mac Admin
-disclaimer:
-  text: This is an old post. Content may be out of date.
 ---
+
+> ⚠️ This is an old post.
+>
+> Content may be out of date.
 
 You can install Backblaze silently from the command line by running the `bzinstall_mate` utility within the `Backblaze Installer.app`.
 

@@ -8,9 +8,12 @@ author:
 featured: false
 tags:
   - Old Post
-disclaimer:
-  text: This is an old post. Content may be out of date.
+  - Mac Admin
 ---
+
+> ⚠️ This is an old post.
+>
+> Content may be out of date.
 
 Apple Remote Desktop can be enabled and configured via the command line:
 
