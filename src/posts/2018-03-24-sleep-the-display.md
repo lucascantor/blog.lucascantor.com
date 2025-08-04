@@ -1,17 +1,19 @@
 ---
 title: Sleep the Display
-excerpt: "Sleep Mac displays or put entire systems to sleep from the command line using pmset utility."
+excerpt: 'Sleep Mac displays or put entire systems to sleep from the command line using pmset utility.'
 date: 2018-03-24
 author:
-  name: "Lucas Cantor"
-  image: "/assets/images/lucas-cantor.jpg"
+  name: 'Lucas Cantor'
+  image: '/assets/images/lucas-cantor.jpg'
 featured: false
 tags:
   - Old Post
   - Mac Admin
-disclaimer:
-  text: This is an old post. Content may be out of date.
 ---
+
+> ⚠️ This is an old post.
+>
+> Content may be out of date.
 
 The `pmset` utility can be used to sleep the display of a Mac from the command line. This can be useful for locking a Mac remotely if its security settings are configured to require a password after waking, but without needing to put the Mac fully to sleep:
 

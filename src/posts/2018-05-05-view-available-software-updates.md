@@ -1,17 +1,19 @@
 ---
 title: View Available Software Updates in the Mac App Store
-excerpt: "Open the Mac App Store updates page from the command line using the macappstore:// URL scheme."
+excerpt: 'Open the Mac App Store updates page from the command line using the macappstore:// URL scheme.'
 date: 2018-05-05
 author:
-  name: "Lucas Cantor"
-  image: "/assets/images/lucas-cantor.jpg"
+  name: 'Lucas Cantor'
+  image: '/assets/images/lucas-cantor.jpg'
 featured: false
 tags:
   - Old Post
   - Mac Admin
-disclaimer:
-  text: This is an old post. Content may be out of date.
 ---
+
+> ⚠️ This is an old post.
+>
+> Content may be out of date.
 
 You can use the `macappstore://` scheme to open the Mac App Store to view the currently available software updates:
 

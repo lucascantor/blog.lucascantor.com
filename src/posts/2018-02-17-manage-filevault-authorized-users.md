@@ -8,9 +8,12 @@ author:
 featured: false
 tags:
   - Old Post
-disclaimer:
-  text: This is an old post. Content may be out of date.
+  - Mac Admin
 ---
+
+> ⚠️ This is an old post.
+>
+> Content may be out of date.
 
 The `fdesetup` utility can be used to manage which users are authorized to unlock FileVault encrypted boot volumes:
 

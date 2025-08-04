@@ -8,9 +8,12 @@ author:
 featured: false
 tags:
   - Old Post
-disclaimer:
-  text: This is an old post. Content may be out of date.
+  - Mac Admin
 ---
+
+> ⚠️ This is an old post.
+>
+> Content may be out of date.
 
 The `installer` utility can be used to install .pkg software installation files from the command line:
 

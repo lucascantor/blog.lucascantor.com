@@ -1,17 +1,19 @@
 ---
 title: Start the Screensaver
-excerpt: "Start the macOS screensaver from the command line to remotely lock systems that require passwords after wake."
+excerpt: 'Start the macOS screensaver from the command line to remotely lock systems that require passwords after wake.'
 date: 2018-03-31
 author:
-  name: "Lucas Cantor"
-  image: "/assets/images/lucas-cantor.jpg"
+  name: 'Lucas Cantor'
+  image: '/assets/images/lucas-cantor.jpg'
 featured: false
 tags:
   - Old Post
   - Mac Admin
-disclaimer:
-  text: This is an old post. Content may be out of date.
 ---
+
+> ⚠️ This is an old post.
+>
+> Content may be out of date.
 
 The screensaver engine on a Mac can be invoked from the command line. This can be useful for locking a Mac remotely if its security settings are configured to require a password after waking, but without needing to put the Mac fully to sleep:
 

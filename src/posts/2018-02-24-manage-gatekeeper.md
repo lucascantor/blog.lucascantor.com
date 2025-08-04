@@ -8,9 +8,12 @@ author:
 featured: false
 tags:
   - Old Post
-disclaimer:
-  text: This is an old post. Content may be out of date.
+  - Mac Admin
 ---
+
+> ⚠️ This is an old post.
+>
+> Content may be out of date.
 
 The `spctl` utility can be used to manage the configuraton of macOS' [Gatekeeper security system](https://support.apple.com/en-us/HT202491).
 

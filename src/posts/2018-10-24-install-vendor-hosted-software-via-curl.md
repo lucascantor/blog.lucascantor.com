@@ -1,17 +1,19 @@
 ---
 title: Install Vendor-Hosted Software via curl
-excerpt: "Automate installation of current software versions from vendor URLs using custom bash scripts and Jamf Pro policies."
+excerpt: 'Automate installation of current software versions from vendor URLs using custom bash scripts and Jamf Pro policies.'
 date: 2018-10-24
 author:
-  name: "Lucas Cantor"
-  image: "/assets/images/lucas-cantor.jpg"
+  name: 'Lucas Cantor'
+  image: '/assets/images/lucas-cantor.jpg'
 featured: false
 tags:
   - Old Post
   - Mac Admin
-disclaimer:
-  text: This is an old post. Content may be out of date.
 ---
+
+> ⚠️ This is an old post.
+>
+> Content may be out of date.
 
 ## Background
 
