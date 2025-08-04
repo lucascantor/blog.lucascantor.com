@@ -1,5 +1,5 @@
 <!-- Subscribe form placeholder -->
-{% if not page.url.startsWith('/posts/') %}
+{% if not (page.filePathStem and page.filePathStem.startsWith('/posts/')) %}
 <section class="subscribe-section">
 	<div class="subscribe-wrap">
 		<h3>Subscribe to {{ site.title }}</h3>
