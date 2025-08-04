@@ -2,7 +2,7 @@
 
 Version history of [blog.lucascantor.com](https://blog.lucascantor.com)
 
-- Powered by [Eleventy](https://11ty.dev/) and the [Bliss](https://github.com/lwojcik/eleventy-template-bliss) template
+- Powered by [Eleventy](https://11ty.dev/) and the [Okiro]([https://github.com/lwojcik/eleventy-template-bliss](https://fueko.net/)) Ghost template
 - Built with [GitHub Actions](https://github.com/features/actions)
 - Hosted on [AWS S3](https://pages.github.com) behind [CloudFront](https://aws.amazon.com/cloudfront/)
 
