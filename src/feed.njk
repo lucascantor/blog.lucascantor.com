@@ -18,7 +18,7 @@ eleventyExcludeFromCollections: true
     {%- for post in collections.posts | slice(0, 20) %}
     <item>
       <title>{{ post.data.title | escape }}</title>
-      <description>{{ post.data.excerpt or (post.content | excerpt(200)) | escape }}</description>
+      <description>{{ (post.data.excerpt or (post.content | excerpt(200))) | escape }}</description>
       <link>{{ site.url }}{{ post.url }}</link>
       <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
       <pubDate>{{ post.date | dateISO }}</pubDate>
@@ -28,7 +28,7 @@ eleventyExcludeFromCollections: true
       <category>{{ tag | escape }}</category>
       {%- endfor %}
       {%- endif %}
-      <content:encoded><![CDATA[{{ post.content }}]]></content:encoded>
+      <content:encoded><![CDATA[{{ post.content | safe }}]]></content:encoded>
     </item>
     {%- endfor %}
   </channel>
