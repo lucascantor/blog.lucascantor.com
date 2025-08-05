@@ -3,8 +3,9 @@ title: Tines Wenbinar
 excerpt: Watch a webinar discussing Intercom's journey to building an automation center of excellence using Tines.
 date: 2024-05-02
 author:
-  name: "Lucas Cantor"
-  image: "/assets/images/lucas-cantor.jpg"
+  name: 'Lucas Cantor'
+  image: '/assets/images/lucas-cantor.jpg'
+feature_image: '/assets/images/2024-05-02-tines-webinar.png'
 featured: false
 tags:
   - No-Code

@@ -5,6 +5,7 @@ date: 2018-04-21
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
+feature_image: '/assets/images/2018-04-21-install-backblaze-silently.png'
 featured: false
 tags:
   - Old Post

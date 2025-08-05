@@ -5,6 +5,7 @@ date: 2019-07-07
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
+feature_image: '/assets/images/2019-07-07-enforcing-google-chrome-policy-on-windows-via-third-party-admx-in-intune.png'
 featured: false
 tags:
   - Old Post

@@ -1,12 +1,12 @@
 {% if settings.logo_for_dark_color_scheme %}
 	{% if settings.color_scheme == "Dark" %}
-	<a href="{{ site.url }}" class="is-image"><img src="{{ settings.logo_for_dark_color_scheme }}" alt="{{ site.title }} home"></a>
+	<a href="/" class="is-image"><img src="{{ settings.logo_for_dark_color_scheme }}" alt="{{ site.title }} home"></a>
 	{% elif settings.color_scheme == "Auto" %}
-	<a href="{{ site.url }}" class="is-dark is-image"><img src="{{ settings.logo_for_dark_color_scheme }}" alt="{{ site.title }} home"></a>
+	<a href="/" class="is-dark is-image"><img src="{{ settings.logo_for_dark_color_scheme }}" alt="{{ site.title }} home"></a>
 	{% endif %}
 	{% if settings.color_scheme != "Dark" %}
-	<a href="{{ site.url }}"{% if site.logo %} class="is-image"><img src="{{ site.logo }}" alt="{{ site.title }} home">{% else %} class="is-title">{{ site.title }}{% endif %}</a>
+	<a href="/"{% if site.logo %} class="is-image"><img src="{{ site.logo }}" alt="{{ site.title }} home">{% else %} class="is-title">{{ site.title }}{% endif %}</a>
 	{% endif %}
 {% else %}
-	<a href="{{ site.url }}"{% if site.logo %} class="is-image"><img src="{{ site.logo }}" alt="{{ site.title }} home">{% else %} class="is-title">{{ site.title }}{% endif %}</a>
+	<a href="/"{% if site.logo %} class="is-image"><img src="{{ site.logo }}" alt="{{ site.title }} home">{% else %} class="is-title">{{ site.title }}{% endif %}</a>
 {% endif %}

@@ -1,10 +1,11 @@
 ---
 title: Terraform Cloud Dynamic Provider Credentials
-excerpt: "Replace static AWS IAM secrets with dynamic provider credentials in Terraform Cloud using OIDC trust relationships."
+excerpt: 'Replace static AWS IAM secrets with dynamic provider credentials in Terraform Cloud using OIDC trust relationships.'
 date: 2023-12-27
 author:
-  name: "Lucas Cantor"
-  image: "/assets/images/lucas-cantor.jpg"
+  name: 'Lucas Cantor'
+  image: '/assets/images/lucas-cantor.jpg'
+feature_image: '/assets/images/2023-12-27-terraform-cloud-dynamic-provider-credentials.png'
 featured: false
 tags:
   - Infrastructure as Code

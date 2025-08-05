@@ -1,10 +1,11 @@
 ---
 title: An iPhone App Built for Two
-excerpt: "Building SpendSlope, a visual budgeting iPhone app that shows spending patterns compared to safe budget rates using SwiftUI."
+excerpt: 'Building SpendSlope, a visual budgeting iPhone app that shows spending patterns compared to safe budget rates using SwiftUI.'
 date: 2023-10-16
 author:
-  name: "Lucas Cantor"
-  image: "/assets/images/lucas-cantor.jpg"
+  name: 'Lucas Cantor'
+  image: '/assets/images/lucas-cantor.jpg'
+feature_image: '/assets/images/2023-10-16-an-iphone-app-built-for-two.png'
 featured: true
 tags:
   - iOS Dev

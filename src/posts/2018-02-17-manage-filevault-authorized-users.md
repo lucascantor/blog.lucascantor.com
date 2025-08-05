@@ -5,6 +5,7 @@ date: 2018-02-17
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
+feature_image: '/assets/images/2018-02-17-manage-filevault-authorized-users.png'
 featured: false
 tags:
   - Old Post
