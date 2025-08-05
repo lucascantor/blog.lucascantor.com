@@ -5,6 +5,7 @@ date: 2018-06-02
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
+feature_image: '/assets/images/2018-06-02-enable-ownership-on-external-disks.png'
 featured: false
 tags:
   - Old Post

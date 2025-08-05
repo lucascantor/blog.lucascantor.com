@@ -5,6 +5,7 @@ date: 2018-03-10
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
+feature_image: '/assets/images/2018-03-10-schedule-repeating-reboots.png'
 featured: false
 tags:
   - Old Post

@@ -3,8 +3,9 @@ title: Adding Fediverse Creator Attribution to Your Blog
 excerpt: How to add Mastodon author attribution tags to your blog so your account gets tagged when links are shared on the fediverse.
 date: 2024-10-13
 author:
-  name: "Lucas Cantor"
-  image: "/assets/images/lucas-cantor.jpg"
+  name: 'Lucas Cantor'
+  image: '/assets/images/lucas-cantor.jpg'
+feature_image: '/assets/images/2024-10-13-adding-fediverse-creator-attribution.png'
 featured: true
 tags:
   - Web

@@ -1,10 +1,11 @@
 ---
 title: Deploy a Static Website to AWS S3 with Official GitHub Actions
-excerpt: "Use official AWS GitHub Actions to deploy static websites to S3 with OIDC authentication instead of long-lived credentials."
+excerpt: 'Use official AWS GitHub Actions to deploy static websites to S3 with OIDC authentication instead of long-lived credentials.'
 date: 2024-04-15
 author:
-  name: "Lucas Cantor"
-  image: "/assets/images/lucas-cantor.jpg"
+  name: 'Lucas Cantor'
+  image: '/assets/images/lucas-cantor.jpg'
+feature_image: '/assets/images/2024-04-15-deploy-to-s3-with-official-github-actions.png'
 featured: true
 tags:
   - Infrastructure as Code

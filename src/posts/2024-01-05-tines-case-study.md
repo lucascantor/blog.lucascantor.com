@@ -1,10 +1,11 @@
 ---
 title: Tines Case Study
-excerpt: "Tines published a case study showcasing business process automation implementation for IT and InfoSec at Intercom."
+excerpt: 'Tines published a case study showcasing business process automation implementation for IT and InfoSec at Intercom.'
 date: 2024-01-05
 author:
-  name: "Lucas Cantor"
-  image: "/assets/images/lucas-cantor.jpg"
+  name: 'Lucas Cantor'
+  image: '/assets/images/lucas-cantor.jpg'
+feature_image: '/assets/images/2024-01-05-tines-case-study.png'
 featured: false
 tags:
   - No-Code

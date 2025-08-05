@@ -5,6 +5,7 @@ date: 2025-04-14
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
+feature_image: '/assets/images/2025-04-14-block-search-engine-indexing.png'
 featured: false
 tags:
   - Security

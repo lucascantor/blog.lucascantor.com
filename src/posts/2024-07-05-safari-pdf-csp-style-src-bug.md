@@ -3,8 +3,9 @@ title: A Safari PDF Rendering Bug Workaround
 excerpt: Work around a Safari PDF rendering bug that violates content security policies by forcing PDF downloads instead.
 date: 2024-07-05
 author:
-  name: "Lucas Cantor"
-  image: "/assets/images/lucas-cantor.jpg"
+  name: 'Lucas Cantor'
+  image: '/assets/images/lucas-cantor.jpg'
+feature_image: '/assets/images/2024-07-05-safari-pdf-csp-style-src-bug.png'
 featured: false
 tags:
   - Web

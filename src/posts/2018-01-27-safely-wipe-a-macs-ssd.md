@@ -5,6 +5,7 @@ date: 2018-01-27
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
+feature_image: '/assets/images/2018-01-27-safely-wipe-a-macs-ssd.png'
 featured: false
 tags:
   - Old Post
