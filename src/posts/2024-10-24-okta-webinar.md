@@ -5,7 +5,7 @@ date: 2024-10-24
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
-feature_image: '/assets/images/2024-10-24-okta-webinar.png'
+feature_image: '/assets/images/rodion-kutsaiev-IvIj_JBVHwk-unsplash.jpg'
 featured: false
 tags:
   - IAM

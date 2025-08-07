@@ -5,7 +5,7 @@ date: 2018-05-11
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
-feature_image: '/assets/images/2018-05-12-disable-printer-sharing.png'
+feature_image: '/assets/images/rodion-kutsaiev-BlQyAdgorqo-unsplash.jpg'
 featured: false
 tags:
   - Old Post

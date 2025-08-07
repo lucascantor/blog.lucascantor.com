@@ -23,7 +23,7 @@
         {% if settings.show_author and author %}
         <div class="item-profile-image">
           {% if author.image %}
-          <a href="/about/" class="global-image">
+          <a href="{{ site.author.url }}" class="global-image">
             <img src="{{ author.image }}" alt="{{ author.name }}" />
           </a>
           {% endif %}
@@ -31,7 +31,7 @@
         {% endif %}
         <div class="item-authors">
           {% if settings.show_author and author %}
-          <a href="/about/">{{ author.name }}</a>
+          <a href="{{ site.author.url }}">{{ author.name }}</a>
           {% endif %}
           <div class="item-time">
             <time datetime="{{ date | dateISO }}"

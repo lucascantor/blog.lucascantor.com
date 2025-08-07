@@ -5,7 +5,7 @@ date: 2018-04-14
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
-feature_image: '/assets/images/2018-04-14-re-run-setup-assistant.png'
+feature_image: '/assets/images/rodion-kutsaiev-LI61nid_juE-unsplash.jpg'
 featured: false
 tags:
   - Old Post

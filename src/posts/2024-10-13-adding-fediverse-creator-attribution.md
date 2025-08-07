@@ -5,7 +5,7 @@ date: 2024-10-13
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
-feature_image: '/assets/images/2024-10-13-adding-fediverse-creator-attribution.png'
+feature_image: '/assets/images/rodion-kutsaiev-MyRHFbfRI0Q-unsplash.jpg'
 featured: true
 tags:
   - Web

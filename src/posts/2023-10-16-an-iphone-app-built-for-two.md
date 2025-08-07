@@ -5,7 +5,7 @@ date: 2023-10-16
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
-feature_image: '/assets/images/2023-10-16-an-iphone-app-built-for-two.png'
+feature_image: '/assets/images/rodion-kutsaiev-MyRHFbfRI0Q-unsplash.jpg'
 featured: true
 tags:
   - iOS Dev

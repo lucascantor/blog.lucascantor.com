@@ -10,8 +10,8 @@ eleventyExcludeFromCollections: true
     <link>{{ site.url }}/</link>
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
     <language>{{ site.locale }}</language>
-    <managingEditor>{{ site.author.email }} ({{ site.author.name }})</managingEditor>
-    <webMaster>{{ site.author.email }} ({{ site.author.name }})</webMaster>
+    <managingEditor>{{ site.author.name }}</managingEditor>
+    <webMaster>{{ site.author.name }}</webMaster>
     <lastBuildDate>{{ collections.posts[0].date | dateISO }}</lastBuildDate>
     <generator>Eleventy</generator>
     
@@ -22,7 +22,7 @@ eleventyExcludeFromCollections: true
       <link>{{ site.url }}{{ post.url }}</link>
       <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
       <pubDate>{{ post.date | dateISO }}</pubDate>
-      <author>{{ site.author.email }} ({{ site.author.name }})</author>
+      <author>{{ site.author.name }}</author>
       {%- if post.data.tags %}
       {%- for tag in post.data.tags %}
       <category>{{ tag | escape }}</category>

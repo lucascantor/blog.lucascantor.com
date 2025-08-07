@@ -5,7 +5,7 @@ date: 2024-04-15
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
-feature_image: '/assets/images/2024-04-15-deploy-to-s3-with-official-github-actions.png'
+feature_image: '/assets/images/philip-oroni-E4PyGou50L0-unsplash.jpg'
 featured: true
 tags:
   - Infrastructure as Code

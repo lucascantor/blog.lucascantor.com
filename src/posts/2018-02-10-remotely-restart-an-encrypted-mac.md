@@ -5,7 +5,7 @@ date: 2018-02-10
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
-feature_image: '/assets/images/2018-02-10-remotely-restart-an-encrypted-mac.png'
+feature_image: '/assets/images/rodion-kutsaiev-YlnhPszsbf0-unsplash.jpg'
 featured: false
 tags:
   - Old Post

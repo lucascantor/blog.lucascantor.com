@@ -197,11 +197,16 @@ module.exports = function(eleventyConfig) {
   ]);
 
   // Markdown configuration
-  eleventyConfig.setLibrary("md", require("markdown-it")({
-    html: true,
-    breaks: true,
-    linkify: true
-  }));
+  const markdownIt = require("markdown-it");
+  const markdownItFootnote = require("markdown-it-footnote");
+  
+  eleventyConfig.setLibrary("md", 
+    markdownIt({
+      html: true,
+      breaks: true,
+      linkify: true
+    }).use(markdownItFootnote)
+  );
 
   return {
     templateFormats: ["md", "njk", "html"],

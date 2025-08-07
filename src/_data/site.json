@@ -5,8 +5,7 @@
   "locale": "en",
   "author": {
     "name": "Lucas Cantor",
-    "email": "lucas@cantor.cloud",
-    "url": "/",
+    "url": "https://lucascantor.com",
     "fediverse": [
       {
         "username": "lucas",
@@ -19,11 +18,11 @@
   "navigation": [
     {
       "label": "Home",
-      "url": "/"
+      "url": "https://lucascantor.com"
     },
     {
-      "label": "About",
-      "url": "/about/"
+      "label": "Blog",
+      "url": "https://blog.lucascantor.com"
     }
   ],
   "social": {
