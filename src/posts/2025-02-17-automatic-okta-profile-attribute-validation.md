@@ -5,7 +5,7 @@ date: 2025-02-17
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
-feature_image: '/assets/images/2025-02-17-automatic-okta-profile-attribute-validation.png'
+feature_image: '/assets/images/philip-oroni-6ZONHsVyAgY-unsplash.jpg'
 featured: true
 tags:
   - IAM

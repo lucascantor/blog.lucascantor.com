@@ -5,7 +5,7 @@ date: 2024-05-02
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
-feature_image: '/assets/images/2024-05-02-tines-webinar.png'
+feature_image: '/assets/images/rodion-kutsaiev-U3Acjr1pL_A-unsplash.jpg'
 featured: false
 tags:
   - No-Code

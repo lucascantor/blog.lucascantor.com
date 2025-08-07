@@ -5,7 +5,7 @@ date: 2018-05-05
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
-feature_image: '/assets/images/2018-05-05-view-available-software-updates.png'
+feature_image: '/assets/images/mariia-shalabaieva-xitTdy93tlI-unsplash.jpg'
 featured: false
 tags:
   - Old Post

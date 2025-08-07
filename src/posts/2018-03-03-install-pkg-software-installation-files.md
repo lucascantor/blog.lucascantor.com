@@ -5,7 +5,7 @@ date: 2018-03-03
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
-feature_image: '/assets/images/2018-03-03-install-pkg-software-installation-files.png'
+feature_image: '/assets/images/mariia-shalabaieva-xitTdy93tlI-unsplash.jpg'
 featured: false
 tags:
   - Old Post

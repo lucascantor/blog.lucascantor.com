@@ -5,7 +5,7 @@ date: 2019-05-27
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
-feature_image: '/assets/images/2019-05-27-add-macos-dark-mode-support-to-your-website.png'
+feature_image: '/assets/images/getty-images-eFiENE6KwGE-unsplash.jpg'
 featured: true
 tags:
   - Old Post

@@ -5,7 +5,7 @@ date: 2018-03-17
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
-feature_image: '/assets/images/2018-03-17-create-a-bootable-macos-installation-disk.png'
+feature_image: '/assets/images/philip-oroni-fcaNA1-nqM4-unsplash.jpg'
 featured: false
 tags:
   - Old Post

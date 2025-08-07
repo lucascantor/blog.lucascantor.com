@@ -30,7 +30,7 @@
 				{% if settings.show_author and post.data.author %}
 				<div class="item-profile-image">
 					{% if post.data.author.image %}
-					<a href="/about/" class="global-image">
+					<a href="{{ site.author.url }}" class="global-image">
 						<img src="{{ post.data.author.image }}" alt="{{ post.data.author.name }}">
 					</a>
 					{% endif %}
@@ -38,7 +38,7 @@
 				{% endif %}
 				<div class="item-authors">
 					{% if settings.show_author and post.data.author %}
-					<a href="/about/">{{ post.data.author.name }}</a>
+					<a href="{{ site.author.url }}">{{ post.data.author.name }}</a>
 					{% endif %}
 					<div class="item-time">
 						<time datetime="{{ post.date | dateISO }}">{{ post.date | dateFormat("LLLL dd, yyyy") }}</time> ∙ {{ post.content | readingTime }} min read
@@ -62,7 +62,7 @@
 			{% if settings.show_author and post.data.author %}
 			<div class="item-meta global-meta global-pointer">
 				<div>
-					<a href="/about/">{{ post.data.author.name }}</a>
+					<a href="{{ site.author.url }}">{{ post.data.author.name }}</a>
 				</div>
 			</div>
 			{% endif %}

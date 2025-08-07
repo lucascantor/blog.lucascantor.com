@@ -5,7 +5,7 @@ date: 2024-07-05
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
-feature_image: '/assets/images/2024-07-05-safari-pdf-csp-style-src-bug.png'
+feature_image: '/assets/images/rodion-kutsaiev-jAnqHe_mr3o-unsplash.jpg'
 featured: false
 tags:
   - Web

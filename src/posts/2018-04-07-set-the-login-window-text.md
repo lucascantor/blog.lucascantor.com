@@ -5,7 +5,7 @@ date: 2018-04-07
 author:
   name: 'Lucas Cantor'
   image: '/assets/images/lucas-cantor.jpg'
-feature_image: '/assets/images/2018-04-07-set-the-login-window-text.png'
+feature_image: '/assets/images/getty-images-C3gjLSgTKNw-unsplash.jpg'
 featured: false
 tags:
   - Old Post
