@@ -17,8 +17,10 @@
 					{% for item in site.navigation %}
 					{% if item.label == "Home" %}
 					<li><a href="{{ site.author.url }}">{{ item.label }}</a></li>
+					{% elif item.label == "Blog" %}
+					<li><a href="{{ item.url | url }}" class="is-active">{{ item.label }}</a></li>
 					{% else %}
-					<li><a href="{{ item.url | url }}">{{ item.label }}</a></li>
+					<li><a href="{{ item.url | url }}"{% if item.url == (site.url + page.url) %} class="is-active"{% endif %}>{{ item.label }}</a></li>
 					{% endif %}
 					{% endfor %}
 				</ul>
