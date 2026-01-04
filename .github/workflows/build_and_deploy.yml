@@ -10,7 +10,7 @@ on:
 
 # Set environment variables
 env:
-  AWS_ROLE_ARN: 'arn:aws:iam::042672036044:role/github-actions-sts-assumption-role'
+  AWS_ROLE_ARN: 'arn:aws:iam::042672036044:role/github-actions-sts-assumption-role-blog-lucascantor-com'
   AWS_S3_BUCKET_NAME: 'blog.lucascantor.com'
   AWS_REGION: 'us-east-1'
 
