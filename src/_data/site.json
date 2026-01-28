@@ -1,6 +1,6 @@
 {
   "title": "Lucas Cantor",
-  "description": "InfoSec Now, Serenity Later",
+  "description": "Serenity Waits for No One",
   "url": "https://blog.lucascantor.com",
   "locale": "en",
   "author": {
@@ -27,8 +27,8 @@
   ],
   "social": {
     "mastodon": "https://infosec.exchange/@lucas",
-    "github": "https://github.com/lucascantor",
-    "linkedin": "https://linkedin.com/in/lucascantor",
-    "glass": "https://glass.photo/lucascantor"
+    "glass": "https://glass.photo/lucascantor",
+    "letterboxd": "https://letterboxd.com/lucascantor",
+    "codeberg": "https://codeberg.org/lucascantor"
   }
 }
