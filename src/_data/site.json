@@ -9,8 +9,8 @@
     "fediverse": [
       {
         "username": "lucas",
-        "server": "infosec.exchange",
-        "url": "https://infosec.exchange/@lucas"
+        "server": "social.lol",
+        "url": "https://social.lol/@lucas"
       }
     ]
   },
@@ -26,7 +26,7 @@
     }
   ],
   "social": {
-    "mastodon": "https://infosec.exchange/@lucas",
+    "mastodon": "https://social.lol/@lucas",
     "glass": "https://glass.photo/lucascantor",
     "letterboxd": "https://letterboxd.com/lucascantor",
     "codeberg": "https://codeberg.org/lucascantor",
